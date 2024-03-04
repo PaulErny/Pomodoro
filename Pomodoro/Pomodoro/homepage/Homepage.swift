@@ -1,5 +1,5 @@
 //
-//  homepage.swift
+//  Homepage.swift
 //  Pomodoro
 //
 //  Created by Paul Erny on 04/03/2024.

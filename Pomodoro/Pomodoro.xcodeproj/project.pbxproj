@@ -26,9 +26,9 @@
 		DA1676B22B95DF93003DC9CD /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA1676AF2B95DF92003DC9CD /* Montserrat-Bold.ttf */; };
 		DA1676B42B95E1F1003DC9CD /* Silkscreen-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA1676B32B95E1F1003DC9CD /* Silkscreen-Regular.ttf */; };
 		DA1676B72B95E4D7003DC9CD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676B62B95E4D7003DC9CD /* Colors.swift */; };
-		DA1676BA2B95FFB9003DC9CD /* homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676B92B95FFB9003DC9CD /* homepage.swift */; };
-		DA1676BB2B95FFB9003DC9CD /* homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676B92B95FFB9003DC9CD /* homepage.swift */; };
-		DA1676BC2B95FFB9003DC9CD /* homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676B92B95FFB9003DC9CD /* homepage.swift */; };
+		DA1676BA2B95FFB9003DC9CD /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676B92B95FFB9003DC9CD /* Homepage.swift */; };
+		DA1676BB2B95FFB9003DC9CD /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676B92B95FFB9003DC9CD /* Homepage.swift */; };
+		DA1676BC2B95FFB9003DC9CD /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676B92B95FFB9003DC9CD /* Homepage.swift */; };
 		DA1676BE2B9601F3003DC9CD /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676BD2B9601F3003DC9CD /* Text.swift */; };
 		DA1676BF2B9601F3003DC9CD /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676BD2B9601F3003DC9CD /* Text.swift */; };
 		DA1676C02B9601F3003DC9CD /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676BD2B9601F3003DC9CD /* Text.swift */; };
@@ -69,7 +69,7 @@
 		DA1676AF2B95DF92003DC9CD /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		DA1676B32B95E1F1003DC9CD /* Silkscreen-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Silkscreen-Regular.ttf"; sourceTree = "<group>"; };
 		DA1676B62B95E4D7003DC9CD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		DA1676B92B95FFB9003DC9CD /* homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homepage.swift; sourceTree = "<group>"; };
+		DA1676B92B95FFB9003DC9CD /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
 		DA1676BD2B9601F3003DC9CD /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -190,7 +190,7 @@
 		DA1676B82B95FF7C003DC9CD /* homepage */ = {
 			isa = PBXGroup;
 			children = (
-				DA1676B92B95FFB9003DC9CD /* homepage.swift */,
+				DA1676B92B95FFB9003DC9CD /* Homepage.swift */,
 			);
 			path = homepage;
 			sourceTree = "<group>";
@@ -338,7 +338,7 @@
 				DA16769C2B95D8B5003DC9CD /* Fonts.swift in Sources */,
 				DA1676B72B95E4D7003DC9CD /* Colors.swift in Sources */,
 				DA11ED022B91D7DD0044CD17 /* ContentView.swift in Sources */,
-				DA1676BA2B95FFB9003DC9CD /* homepage.swift in Sources */,
+				DA1676BA2B95FFB9003DC9CD /* Homepage.swift in Sources */,
 				DA1676BE2B9601F3003DC9CD /* Text.swift in Sources */,
 				DA11ED002B91D7DD0044CD17 /* PomodoroApp.swift in Sources */,
 			);
@@ -350,7 +350,7 @@
 			files = (
 				DA11ED112B91D7DF0044CD17 /* PomodoroTests.swift in Sources */,
 				DA1676BF2B9601F3003DC9CD /* Text.swift in Sources */,
-				DA1676BB2B95FFB9003DC9CD /* homepage.swift in Sources */,
+				DA1676BB2B95FFB9003DC9CD /* Homepage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +361,7 @@
 				DA11ED1D2B91D7DF0044CD17 /* PomodoroUITestsLaunchTests.swift in Sources */,
 				DA11ED1B2B91D7DF0044CD17 /* PomodoroUITests.swift in Sources */,
 				DA1676C02B9601F3003DC9CD /* Text.swift in Sources */,
-				DA1676BC2B95FFB9003DC9CD /* homepage.swift in Sources */,
+				DA1676BC2B95FFB9003DC9CD /* Homepage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
