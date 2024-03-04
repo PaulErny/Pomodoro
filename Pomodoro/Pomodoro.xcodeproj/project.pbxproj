@@ -14,6 +14,18 @@
 		DA11ED112B91D7DF0044CD17 /* PomodoroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11ED102B91D7DF0044CD17 /* PomodoroTests.swift */; };
 		DA11ED1B2B91D7DF0044CD17 /* PomodoroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11ED1A2B91D7DF0044CD17 /* PomodoroUITests.swift */; };
 		DA11ED1D2B91D7DF0044CD17 /* PomodoroUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA11ED1C2B91D7DF0044CD17 /* PomodoroUITestsLaunchTests.swift */; };
+		DA16769C2B95D8B5003DC9CD /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16769B2B95D8B5003DC9CD /* Fonts.swift */; };
+		DA1676A32B95DA6A003DC9CD /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA1676A22B95DA6A003DC9CD /* Manrope-SemiBold.ttf */; };
+		DA1676A42B95DA6A003DC9CD /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA1676A22B95DA6A003DC9CD /* Manrope-SemiBold.ttf */; };
+		DA1676A52B95DA6A003DC9CD /* Manrope-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA1676A22B95DA6A003DC9CD /* Manrope-SemiBold.ttf */; };
+		DA1676AC2B95DF73003DC9CD /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA1676AB2B95DF73003DC9CD /* Montserrat-SemiBold.ttf */; };
+		DA1676AD2B95DF73003DC9CD /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA1676AB2B95DF73003DC9CD /* Montserrat-SemiBold.ttf */; };
+		DA1676AE2B95DF73003DC9CD /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA1676AB2B95DF73003DC9CD /* Montserrat-SemiBold.ttf */; };
+		DA1676B02B95DF93003DC9CD /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA1676AF2B95DF92003DC9CD /* Montserrat-Bold.ttf */; };
+		DA1676B12B95DF93003DC9CD /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA1676AF2B95DF92003DC9CD /* Montserrat-Bold.ttf */; };
+		DA1676B22B95DF93003DC9CD /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA1676AF2B95DF92003DC9CD /* Montserrat-Bold.ttf */; };
+		DA1676B42B95E1F1003DC9CD /* Silkscreen-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA1676B32B95E1F1003DC9CD /* Silkscreen-Regular.ttf */; };
+		DA1676B72B95E4D7003DC9CD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676B62B95E4D7003DC9CD /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +56,13 @@
 		DA11ED162B91D7DF0044CD17 /* PomodoroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomodoroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA11ED1A2B91D7DF0044CD17 /* PomodoroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroUITests.swift; sourceTree = "<group>"; };
 		DA11ED1C2B91D7DF0044CD17 /* PomodoroUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DA16769B2B95D8B5003DC9CD /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		DA1676A22B95DA6A003DC9CD /* Manrope-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-SemiBold.ttf"; sourceTree = "<group>"; };
+		DA1676AA2B95DBA2003DC9CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DA1676AB2B95DF73003DC9CD /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		DA1676AF2B95DF92003DC9CD /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		DA1676B32B95E1F1003DC9CD /* Silkscreen-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Silkscreen-Regular.ttf"; sourceTree = "<group>"; };
+		DA1676B62B95E4D7003DC9CD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +113,12 @@
 		DA11ECFE2B91D7DD0044CD17 /* Pomodoro */ = {
 			isa = PBXGroup;
 			children = (
+				DA1676AA2B95DBA2003DC9CD /* Info.plist */,
 				DA11ECFF2B91D7DD0044CD17 /* PomodoroApp.swift */,
 				DA11ED012B91D7DD0044CD17 /* ContentView.swift */,
+				DA1676B52B95E49F003DC9CD /* Style */,
 				DA11ED032B91D7DF0044CD17 /* Assets.xcassets */,
+				DA16769A2B95D877003DC9CD /* components */,
 				DA11ED052B91D7DF0044CD17 /* Preview Content */,
 			);
 			path = Pomodoro;
@@ -125,6 +147,34 @@
 				DA11ED1C2B91D7DF0044CD17 /* PomodoroUITestsLaunchTests.swift */,
 			);
 			path = PomodoroUITests;
+			sourceTree = "<group>";
+		};
+		DA16769A2B95D877003DC9CD /* components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		DA16769D2B95D9AC003DC9CD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DA1676B32B95E1F1003DC9CD /* Silkscreen-Regular.ttf */,
+				DA1676AF2B95DF92003DC9CD /* Montserrat-Bold.ttf */,
+				DA1676AB2B95DF73003DC9CD /* Montserrat-SemiBold.ttf */,
+				DA1676A22B95DA6A003DC9CD /* Manrope-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DA1676B52B95E49F003DC9CD /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				DA16769B2B95D8B5003DC9CD /* Fonts.swift */,
+				DA1676B62B95E4D7003DC9CD /* Colors.swift */,
+				DA16769D2B95D9AC003DC9CD /* Fonts */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +281,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA1676B02B95DF93003DC9CD /* Montserrat-Bold.ttf in Resources */,
 				DA11ED072B91D7DF0044CD17 /* Preview Assets.xcassets in Resources */,
+				DA1676B42B95E1F1003DC9CD /* Silkscreen-Regular.ttf in Resources */,
+				DA1676A32B95DA6A003DC9CD /* Manrope-SemiBold.ttf in Resources */,
+				DA1676AC2B95DF73003DC9CD /* Montserrat-SemiBold.ttf in Resources */,
 				DA11ED042B91D7DF0044CD17 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +294,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA1676AD2B95DF73003DC9CD /* Montserrat-SemiBold.ttf in Resources */,
+				DA1676A42B95DA6A003DC9CD /* Manrope-SemiBold.ttf in Resources */,
+				DA1676B12B95DF93003DC9CD /* Montserrat-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +304,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA1676AE2B95DF73003DC9CD /* Montserrat-SemiBold.ttf in Resources */,
+				DA1676A52B95DA6A003DC9CD /* Manrope-SemiBold.ttf in Resources */,
+				DA1676B22B95DF93003DC9CD /* Montserrat-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +317,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA16769C2B95D8B5003DC9CD /* Fonts.swift in Sources */,
+				DA1676B72B95E4D7003DC9CD /* Colors.swift in Sources */,
 				DA11ED022B91D7DD0044CD17 /* ContentView.swift in Sources */,
 				DA11ED002B91D7DD0044CD17 /* PomodoroApp.swift in Sources */,
 			);
@@ -422,6 +484,7 @@
 				DEVELOPMENT_TEAM = CUKPDDT2TD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pomodoro/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -451,6 +514,7 @@
 				DEVELOPMENT_TEAM = CUKPDDT2TD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pomodoro/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
