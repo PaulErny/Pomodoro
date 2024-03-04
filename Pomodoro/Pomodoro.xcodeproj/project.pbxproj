@@ -32,6 +32,9 @@
 		DA1676BE2B9601F3003DC9CD /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676BD2B9601F3003DC9CD /* Text.swift */; };
 		DA1676BF2B9601F3003DC9CD /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676BD2B9601F3003DC9CD /* Text.swift */; };
 		DA1676C02B9601F3003DC9CD /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676BD2B9601F3003DC9CD /* Text.swift */; };
+		DA1676C22B961291003DC9CD /* ProjectCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676C12B961291003DC9CD /* ProjectCard.swift */; };
+		DA1676C32B961291003DC9CD /* ProjectCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676C12B961291003DC9CD /* ProjectCard.swift */; };
+		DA1676C42B961291003DC9CD /* ProjectCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676C12B961291003DC9CD /* ProjectCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,7 @@
 		DA1676B62B95E4D7003DC9CD /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		DA1676B92B95FFB9003DC9CD /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
 		DA1676BD2B9601F3003DC9CD /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		DA1676C12B961291003DC9CD /* ProjectCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				DA1676BD2B9601F3003DC9CD /* Text.swift */,
+				DA1676C12B961291003DC9CD /* ProjectCard.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -339,6 +344,7 @@
 				DA1676B72B95E4D7003DC9CD /* Colors.swift in Sources */,
 				DA11ED022B91D7DD0044CD17 /* ContentView.swift in Sources */,
 				DA1676BA2B95FFB9003DC9CD /* Homepage.swift in Sources */,
+				DA1676C22B961291003DC9CD /* ProjectCard.swift in Sources */,
 				DA1676BE2B9601F3003DC9CD /* Text.swift in Sources */,
 				DA11ED002B91D7DD0044CD17 /* PomodoroApp.swift in Sources */,
 			);
@@ -349,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA11ED112B91D7DF0044CD17 /* PomodoroTests.swift in Sources */,
+				DA1676C32B961291003DC9CD /* ProjectCard.swift in Sources */,
 				DA1676BF2B9601F3003DC9CD /* Text.swift in Sources */,
 				DA1676BB2B95FFB9003DC9CD /* Homepage.swift in Sources */,
 			);
@@ -362,6 +369,7 @@
 				DA11ED1B2B91D7DF0044CD17 /* PomodoroUITests.swift in Sources */,
 				DA1676C02B9601F3003DC9CD /* Text.swift in Sources */,
 				DA1676BC2B95FFB9003DC9CD /* Homepage.swift in Sources */,
+				DA1676C42B961291003DC9CD /* ProjectCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

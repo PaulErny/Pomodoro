@@ -43,6 +43,14 @@ extension Font {
     static func manrope(_ type: Manrope, size: CGFloat = 20) -> Font {
         return .custom("Manrope-" + type.value, size: size)
     }
+    
+    static var labelFont: Font {
+        .manrope(.semibold, size: 20)
+    }
+
+    static var sublabelFont: Font {
+        .manrope(.semibold, size: 12)
+    }
 
     static func montserrat(_ type: Montserrat, size: CGFloat = 36) -> Font {
         return .custom("Montserrat-" + type.value, size: size)

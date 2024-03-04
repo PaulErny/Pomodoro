@@ -9,6 +9,8 @@ import SwiftUI
 
 protocol TextStyle {}
 
+// ----------------- TITLE STYLE -----------------
+
 struct Title: TextStyle, ViewModifier {
     
     func body(content: Content) -> some View {
@@ -22,6 +24,8 @@ extension ViewModifier where Self == Title {
     static var title: Title { Title() }
 }
 
+// ----------------- TITLE BOLD STYLE -----------------
+
 struct TitleAlternate: TextStyle, ViewModifier {
     
     func body(content: Content) -> some View {
@@ -33,6 +37,36 @@ struct TitleAlternate: TextStyle, ViewModifier {
 
 extension ViewModifier where Self == TitleAlternate {
     static var titleAlternate: TitleAlternate { TitleAlternate() }
+}
+
+// ----------------- LABEL STYLE -----------------
+
+struct Label: TextStyle, ViewModifier {
+    
+    func body(content: Content) -> some View {
+        content
+            .font(.labelFont)
+            .foregroundColor(.label)
+    }
+}
+
+extension ViewModifier where Self == Label {
+    static var label: Label { Label() }
+}
+
+// ----------------- SUBLABEL STYLE -----------------
+
+struct Sublabel: TextStyle, ViewModifier {
+    
+    func body(content: Content) -> some View {
+        content
+            .font(.sublabelFont)
+            .foregroundColor(.sublabel)
+    }
+}
+
+extension ViewModifier where Self == Sublabel {
+    static var sublabel: Sublabel { Sublabel() }
 }
 
 extension Text {
