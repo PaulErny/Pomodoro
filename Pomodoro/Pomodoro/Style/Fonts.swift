@@ -28,7 +28,7 @@ extension Font {
         case bold
         case custom(String)
         
-        var value: String  {
+        var value: String {
             switch self {
             case .semibold:
                 return "SemiBold"
@@ -39,12 +39,20 @@ extension Font {
             }
         }
     }
-    
+
     static func manrope(_ type: Manrope, size: CGFloat = 20) -> Font {
         return .custom("Manrope-" + type.value, size: size)
     }
-    
+
     static func montserrat(_ type: Montserrat, size: CGFloat = 36) -> Font {
         return .custom("Montserrat-" + type.value, size: size)
+    }
+
+    static var titleFont: Font {
+        .montserrat(.semibold, size: 36)
+    }
+
+    static var titleAlternateFont: Font {
+        .montserrat(.bold, size: 32)
     }
 }
