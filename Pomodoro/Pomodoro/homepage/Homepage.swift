@@ -62,10 +62,12 @@ struct Homepage: View {
             }
             .frame(maxHeight: 525)
 
-            RoundedRectangle(cornerRadius: 20)
-                .fill(Color.title)
-                .frame(width: 66, height: 66)
-                .shadow(color: Color("testBtnShadow"), radius: 0, x: -4, y: 5)
+            ZStack {
+                Rectangle()
+//                    .frame(minWidth: .infinity, maxHeight: 60)
+                AddProjectButton()
+            }
+            .frame(maxWidth: .infinity, maxHeight: 96)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .background(Color.background)
