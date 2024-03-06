@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct ProjectCard: View {
+    var projectName: String
+    
     var body: some View {
         
         HStack {
             VStack(alignment: .leading, spacing: 0) {
-                Text("projet 1")
+                Text("projet " + projectName)
                     .style(.label)
                     .padding(.leading, 30)
                     .padding(.top, 7)
@@ -54,7 +56,7 @@ struct ProjectCard_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
             Spacer()
-            ProjectCard()
+            ProjectCard(projectName: "1")
             Spacer()
         }
             .background(Color.background)

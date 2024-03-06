@@ -47,34 +47,27 @@ struct Homepage: View {
             }
             .padding([.top, .leading], 45)
             .ignoresSafeArea()
-            
-            ScrollView {
-                ProjectCard()
-                ProjectCard()
-                ProjectCard()
-                ProjectCard()
-                ProjectCard()
-                ProjectCard()
-                ProjectCard()
-                ProjectCard()
-                ProjectCard()
-                ProjectCard()
-            }
-            .frame(maxHeight: 525)
 
             ZStack {
-                Rectangle()
-//                    .frame(minWidth: .infinity, maxHeight: 60)
-                AddProjectButton()
+                VStack {
+                    ForEach(0...10, id: \.self) { i in
+                        ProjectCard(projectName: String(i))
+                    }
+                }
+                .blurScroll(10)
+
+                VStack {
+                    Spacer()
+                    AddProjectButton()
+                        .padding(.bottom, 27)
+                }
             }
-            .frame(maxWidth: .infinity, maxHeight: 96)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .background(Color.background)
         .ignoresSafeArea()
     }
 }
-
 
 struct homepage_Previews: PreviewProvider {
     static var previews: some View {
