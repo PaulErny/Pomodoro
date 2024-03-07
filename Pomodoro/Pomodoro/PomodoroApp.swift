@@ -12,7 +12,9 @@ struct PomodoroApp: App {
     var body: some Scene {
         WindowGroup {
 //            ContentView()
-            Homepage()
+            NavigationView {
+                Homepage()
+            }
         }
     }
 }

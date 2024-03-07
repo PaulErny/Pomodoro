@@ -41,6 +41,8 @@
 		DA1676CB2B98BDDB003DC9CD /* BlurScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676CA2B98BDDB003DC9CD /* BlurScroll.swift */; };
 		DA1676CC2B98BDDB003DC9CD /* BlurScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676CA2B98BDDB003DC9CD /* BlurScroll.swift */; };
 		DA1676CD2B98BDDB003DC9CD /* BlurScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676CA2B98BDDB003DC9CD /* BlurScroll.swift */; };
+		DA5888B22B99FE82007BA4B0 /* CustomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5888B12B99FE82007BA4B0 /* CustomSheet.swift */; };
+		DA5888B42B9A020C007BA4B0 /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5888B32B9A020C007BA4B0 /* CornerRadius.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		DA1676C12B961291003DC9CD /* ProjectCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCard.swift; sourceTree = "<group>"; };
 		DA1676C52B98B858003DC9CD /* AddProjectButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProjectButton.swift; sourceTree = "<group>"; };
 		DA1676CA2B98BDDB003DC9CD /* BlurScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurScroll.swift; sourceTree = "<group>"; };
+		DA5888B12B99FE82007BA4B0 /* CustomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSheet.swift; sourceTree = "<group>"; };
+		DA5888B32B9A020C007BA4B0 /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +218,8 @@
 			children = (
 				DA1676BD2B9601F3003DC9CD /* Text.swift */,
 				DA1676CA2B98BDDB003DC9CD /* BlurScroll.swift */,
+				DA5888B12B99FE82007BA4B0 /* CustomSheet.swift */,
+				DA5888B32B9A020C007BA4B0 /* CornerRadius.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -358,11 +364,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA5888B22B99FE82007BA4B0 /* CustomSheet.swift in Sources */,
 				DA16769C2B95D8B5003DC9CD /* Fonts.swift in Sources */,
 				DA1676CB2B98BDDB003DC9CD /* BlurScroll.swift in Sources */,
 				DA1676B72B95E4D7003DC9CD /* Colors.swift in Sources */,
 				DA11ED022B91D7DD0044CD17 /* ContentView.swift in Sources */,
 				DA1676BA2B95FFB9003DC9CD /* Homepage.swift in Sources */,
+				DA5888B42B9A020C007BA4B0 /* CornerRadius.swift in Sources */,
 				DA1676C22B961291003DC9CD /* ProjectCard.swift in Sources */,
 				DA1676C62B98B859003DC9CD /* AddProjectButton.swift in Sources */,
 				DA1676BE2B9601F3003DC9CD /* Text.swift in Sources */,
@@ -464,7 +472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -519,7 +527,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -546,6 +554,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -576,6 +585,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

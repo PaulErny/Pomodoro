@@ -38,32 +38,24 @@ import SwiftUI
 
 struct Homepage: View {
     var body: some View {
-        VStack(spacing: 45) {
-            HStack {
+        ZStack {
+            VStack(spacing: 45) {
                 Text("MES\nPROJETS")
                     .style(.title)
                 .multilineTextAlignment(.leading)
-                Spacer()
-            }
-            .padding([.top, .leading], 45)
-            .ignoresSafeArea()
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding([.top, .leading], 45)
 
-            ZStack {
                 VStack {
                     ForEach(0...10, id: \.self) { i in
                         ProjectCard(projectName: String(i))
                     }
                 }
                 .blurScroll(10)
-
-                VStack {
-                    Spacer()
-                    AddProjectButton()
-                        .padding(.bottom, 27)
-                }
             }
+            
+            AddProjectButton()
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .background(Color.background)
         .ignoresSafeArea()
     }
