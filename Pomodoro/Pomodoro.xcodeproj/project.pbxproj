@@ -49,6 +49,9 @@
 		DAA2BD8E2B9F479300017EC3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676B62B95E4D7003DC9CD /* Colors.swift */; };
 		DAA2BD8F2B9F47B700017EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA11ED032B91D7DF0044CD17 /* Assets.xcassets */; };
 		DAA2BD902B9F47B800017EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA11ED032B91D7DF0044CD17 /* Assets.xcassets */; };
+		DAA2BD922B9F4B6F00017EC3 /* ProjectCreationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BD912B9F4B6F00017EC3 /* ProjectCreationSheet.swift */; };
+		DAA2BD932B9F4B6F00017EC3 /* ProjectCreationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BD912B9F4B6F00017EC3 /* ProjectCreationSheet.swift */; };
+		DAA2BD942B9F4B6F00017EC3 /* ProjectCreationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BD912B9F4B6F00017EC3 /* ProjectCreationSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +96,7 @@
 		DA1676CA2B98BDDB003DC9CD /* BlurScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurScroll.swift; sourceTree = "<group>"; };
 		DA5888B12B99FE82007BA4B0 /* CustomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSheet.swift; sourceTree = "<group>"; };
 		DA5888B32B9A020C007BA4B0 /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
+		DAA2BD912B9F4B6F00017EC3 /* ProjectCreationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCreationSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				DA1676C52B98B858003DC9CD /* AddProjectButton.swift */,
+				DAA2BD912B9F4B6F00017EC3 /* ProjectCreationSheet.swift */,
 				DA1676C12B961291003DC9CD /* ProjectCard.swift */,
 			);
 			path = components;
@@ -382,6 +387,7 @@
 				DA1676C22B961291003DC9CD /* ProjectCard.swift in Sources */,
 				DA1676C62B98B859003DC9CD /* AddProjectButton.swift in Sources */,
 				DA1676BE2B9601F3003DC9CD /* Text.swift in Sources */,
+				DAA2BD922B9F4B6F00017EC3 /* ProjectCreationSheet.swift in Sources */,
 				DA11ED002B91D7DD0044CD17 /* PomodoroApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,6 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAA2BD8B2B9F478000017EC3 /* Fonts.swift in Sources */,
+				DAA2BD932B9F4B6F00017EC3 /* ProjectCreationSheet.swift in Sources */,
 				DAA2BD8D2B9F479300017EC3 /* Colors.swift in Sources */,
 				DA11ED112B91D7DF0044CD17 /* PomodoroTests.swift in Sources */,
 				DA1676CC2B98BDDB003DC9CD /* BlurScroll.swift in Sources */,
@@ -405,6 +412,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA2BD942B9F4B6F00017EC3 /* ProjectCreationSheet.swift in Sources */,
 				DAA2BD8C2B9F478000017EC3 /* Fonts.swift in Sources */,
 				DAA2BD8E2B9F479300017EC3 /* Colors.swift in Sources */,
 				DA11ED1D2B91D7DF0044CD17 /* PomodoroUITestsLaunchTests.swift in Sources */,

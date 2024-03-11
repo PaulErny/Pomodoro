@@ -54,6 +54,21 @@ extension ViewModifier where Self == Label {
     static var label: Label { Label() }
 }
 
+// ----------------- ACCENTUATED LABEL STYLE -----------------
+
+struct AccentLabel: TextStyle, ViewModifier {
+    
+    func body(content: Content) -> some View {
+        content
+            .font(.labelFont)
+            .foregroundColor(.title)
+    }
+}
+
+extension ViewModifier where Self == AccentLabel {
+    static var accentLabel: AccentLabel { AccentLabel() }
+}
+
 // ----------------- SUBLABEL STYLE -----------------
 
 struct Sublabel: TextStyle, ViewModifier {
