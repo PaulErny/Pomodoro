@@ -20,6 +20,8 @@ import SwiftUI
 //            .ignoresSafeArea()
 //            VStack(alignment: .leading, spacing: 82) {
 //                Image("Tumbleweed")
+//                    .renderingMode(.template)
+//                    .foregroundColor(Color.cardBackground)
 //                Text("Créez\nvotre\npremier\nprojet")
 //                    .style(.titleAlternate)
 //                .multilineTextAlignment(.leading)
@@ -54,7 +56,10 @@ struct Homepage: View {
                 .blurScroll(10)
             }
             
-            AddProjectButton()
+            VStack {
+                Spacer()
+                AddProjectButton()
+            }
         }
         .background(Color.background)
         .ignoresSafeArea()

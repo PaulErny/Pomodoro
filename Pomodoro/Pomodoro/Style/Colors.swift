@@ -8,11 +8,11 @@
 import Foundation
 import SwiftUI
 
-extension Color {
-    static let background = Color("Background")
-    static let title = Color("Title")
-    static let label = Color("Label")
-    static let sublabel = Color("Sublabel")
-    static let cardBackground = Color("CardBackground")
-    static let inputBackground = Color("InputBackground")
-}
+//extension Color {
+//    public static let background = Color("Background")
+//    public static let title = Color("Title")
+//    public static let label = Color("Label")
+//    public static let sublabel = Color("Sublabel")
+//    public static let cardBackground = Color("CardBackground")
+//    public static let inputBackground = Color("InputBackground")
+//}

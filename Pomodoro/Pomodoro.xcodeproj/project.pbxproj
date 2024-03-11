@@ -43,6 +43,12 @@
 		DA1676CD2B98BDDB003DC9CD /* BlurScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676CA2B98BDDB003DC9CD /* BlurScroll.swift */; };
 		DA5888B22B99FE82007BA4B0 /* CustomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5888B12B99FE82007BA4B0 /* CustomSheet.swift */; };
 		DA5888B42B9A020C007BA4B0 /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5888B32B9A020C007BA4B0 /* CornerRadius.swift */; };
+		DAA2BD8B2B9F478000017EC3 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16769B2B95D8B5003DC9CD /* Fonts.swift */; };
+		DAA2BD8C2B9F478000017EC3 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16769B2B95D8B5003DC9CD /* Fonts.swift */; };
+		DAA2BD8D2B9F479300017EC3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676B62B95E4D7003DC9CD /* Colors.swift */; };
+		DAA2BD8E2B9F479300017EC3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676B62B95E4D7003DC9CD /* Colors.swift */; };
+		DAA2BD8F2B9F47B700017EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA11ED032B91D7DF0044CD17 /* Assets.xcassets */; };
+		DAA2BD902B9F47B800017EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA11ED032B91D7DF0044CD17 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -288,7 +294,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					DA11ECFB2B91D7DD0044CD17 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -343,6 +349,7 @@
 			files = (
 				DA1676AD2B95DF73003DC9CD /* Montserrat-SemiBold.ttf in Resources */,
 				DA1676A42B95DA6A003DC9CD /* Manrope-SemiBold.ttf in Resources */,
+				DAA2BD8F2B9F47B700017EC3 /* Assets.xcassets in Resources */,
 				DA1676B12B95DF93003DC9CD /* Montserrat-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +360,7 @@
 			files = (
 				DA1676AE2B95DF73003DC9CD /* Montserrat-SemiBold.ttf in Resources */,
 				DA1676A52B95DA6A003DC9CD /* Manrope-SemiBold.ttf in Resources */,
+				DAA2BD902B9F47B800017EC3 /* Assets.xcassets in Resources */,
 				DA1676B22B95DF93003DC9CD /* Montserrat-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +390,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA2BD8B2B9F478000017EC3 /* Fonts.swift in Sources */,
+				DAA2BD8D2B9F479300017EC3 /* Colors.swift in Sources */,
 				DA11ED112B91D7DF0044CD17 /* PomodoroTests.swift in Sources */,
 				DA1676CC2B98BDDB003DC9CD /* BlurScroll.swift in Sources */,
 				DA1676C32B961291003DC9CD /* ProjectCard.swift in Sources */,
@@ -395,6 +405,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA2BD8C2B9F478000017EC3 /* Fonts.swift in Sources */,
+				DAA2BD8E2B9F479300017EC3 /* Colors.swift in Sources */,
 				DA11ED1D2B91D7DF0044CD17 /* PomodoroUITestsLaunchTests.swift in Sources */,
 				DA1676CD2B98BDDB003DC9CD /* BlurScroll.swift in Sources */,
 				DA1676C82B98B859003DC9CD /* AddProjectButton.swift in Sources */,
@@ -425,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -458,6 +471,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -472,7 +486,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -486,6 +500,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -519,6 +534,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -527,7 +543,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -554,7 +570,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -562,6 +578,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = PME.Pomodoro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_DISABLE_SAFETY_CHECKS = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -585,7 +602,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -608,7 +625,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CUKPDDT2TD;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = PME.PomodoroTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -628,7 +645,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CUKPDDT2TD;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = PME.PomodoroTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

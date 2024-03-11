@@ -26,12 +26,13 @@ struct AddProjectButton: View {
             }
         }
         .padding(.bottom, 27)
-        .customSheet($showingSheet) {
+        .sheet(isPresented: $showingSheet) {
             VStack {
                 Text("tmp")
             }
-            .frame(maxWidth: .infinity, maxHeight: 250)
+            .menuIndicator(.visible)
             .background(Color.cardBackground)
+            .presentationDetents([.fraction(0.66)])
         }
     }
 }
@@ -42,6 +43,7 @@ struct AddProjectButton_Previews: PreviewProvider {
             Spacer()
             AddProjectButton()
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color.background)
     }
 }
