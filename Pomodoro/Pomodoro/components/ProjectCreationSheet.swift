@@ -8,31 +8,14 @@
 import SwiftUI
 
 struct ProjectCreationSheet: View {
-//    enum FocusedField: Hashable {
-//        case field
-//    }
-    
     @State var tmpText: String = ""
-//    @FocusState var focusedField: FocusedField?
-    @FocusState var focusedField: Bool
+    @FocusState private var focusedField: Bool
+    @Binding var showingSheet: Bool
+    var delegate: SheetDelegate?
+    @State private var isContentValid: Bool = true
 
     var body: some View {
-        VStack(spacing: 10) {
-            HStack(spacing: 0) {
-                Spacer()
-                Text("Nouveau projet")
-                    .style(.label)
-                    .padding(.leading, 20)
-                Spacer()
-                Text("OK")
-                    .style(.accentLabel)
-                    .underline()
-                    .padding(.trailing, 20)
-            }
-            .padding([.top, .bottom], 15)
-            .background(.cardBackground)
-
-            // input field
+        Sheet(validationButton: .visible) {
             TextField("test", text: $tmpText, prompt: Text("Nom du projet").font(.labelFont).foregroundColor(.label))
                 .font(.labelFont) //tmp
                 .foregroundColor(.label) //tmp
@@ -40,22 +23,29 @@ struct ProjectCreationSheet: View {
                 .padding(.leading, 45)
                 .background(
                     Rectangle()
-                        .fill(Color.inputBackground)
+                        .fill(isContentValid ? Color.inputBackground : .red)
                         .border(Color.cardBackground, width: 2)
                 )
-//                .focused($focusedField, equals: .field)
                 .focused($focusedField)
                 .onAppear {
-//                    self.focusedField = .field
                     focusedField = true
                 }
-            
-            Image("List_bg")
-                .renderingMode(.template)
-                .foregroundColor(.cardBackground)
+        } onValidation: {
+            if checkIsContentValid() {
+                showingSheet = false
+                delegate?.onComplete()
+            }
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-        .background(Color.background)
+    }
+    
+    func checkIsContentValid() -> Bool {
+        // TODO: .
+        if tmpText.isEmpty {
+            isContentValid = false // TODO: rouge custom + animation
+            return false
+        }
+        isContentValid = true
+        return true
     }
 }
 
@@ -65,7 +55,7 @@ struct ProjectCreationSheet_Previews: PreviewProvider {
     static var previews: some View {
         Text("test")
             .sheet(isPresented: $showingSheet) {
-                ProjectCreationSheet()
+                ProjectCreationSheet(showingSheet: $showingSheet)
                     .menuIndicator(.visible)
                     .presentationDragIndicator(.visible)
             }

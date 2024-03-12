@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct AddProjectButton: View {
+struct AddProjectButton: View, SheetDelegate {
     @State private var showingSheet = false
-    
+
     var body: some View {
 
         Button {
@@ -27,10 +27,14 @@ struct AddProjectButton: View {
         }
         .padding(.bottom, 27)
         .sheet(isPresented: $showingSheet) {
-            ProjectCreationSheet()
+            ProjectCreationSheet(showingSheet: $showingSheet, delegate: self)
                 .menuIndicator(.visible)
                 .presentationDragIndicator(.visible)
         }
+    }
+    
+    func onComplete() {
+        print("complete")
     }
 }
 
