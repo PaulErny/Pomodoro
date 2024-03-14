@@ -7,9 +7,11 @@
 
 import SwiftUI
 
-struct AddProjectButton: View, SheetDelegate {
+struct AddProjectButton: View, ProjectCreationSheetDelegate {
     @State private var showingSheet = false
     @State var testNav: Bool = false
+    @EnvironmentObject var store: ProjectStorage
+    @State private var newProject: ProjectModel?
 
     var body: some View {
         Button {
@@ -31,11 +33,13 @@ struct AddProjectButton: View, SheetDelegate {
                 .menuIndicator(.visible)
                 .presentationDragIndicator(.visible)
         }
-        .navigationDestination(isPresented: $testNav, destination: {Text("test")})
+        .navigationDestination(isPresented: $testNav, destination: {Text(newProject?.name ?? "error")})
     }
     
-    func onComplete() {
-        print("complete")
+    func onComplete(projectName: String) {
+        let newProject = ProjectModel(name: projectName)
+        store.projects.append(newProject)
+        self.newProject = newProject
         testNav = true
     }
 }

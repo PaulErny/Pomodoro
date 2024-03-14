@@ -39,9 +39,7 @@ import SwiftUI
 //}
 
 struct Homepage: View {
-    @Binding var projects: [ProjectModel]
-    @Environment(\.scenePhase) private var scenePhase
-    let saveAction: () -> Void
+    @EnvironmentObject var store: ProjectStorage
     
     var body: some View {
         ZStack {
@@ -53,12 +51,12 @@ struct Homepage: View {
                 .padding([.top, .leading], 45)
 
                 VStack {
-                    ForEach(ProjectModel.debugSample, id: \.id) { project in
-                        ProjectCard(projectName: project.name)
-                    }
-//                    ForEach(projects, id: \.id) { project in
+//                    ForEach(ProjectModel.debugSample, id: \.id) { project in
 //                        ProjectCard(projectName: project.name)
 //                    }
+                    ForEach(store.projects, id: \.id) { project in
+                        ProjectCard(projectName: project.name)
+                    }
                 }
                 .blurScroll(10)
             }
@@ -67,9 +65,6 @@ struct Homepage: View {
                 Spacer()
                 AddProjectButton()
             }
-        }
-        .onChange(of: scenePhase) { phase in
-            if phase == .background { saveAction() }
         }
         .background(Color.background)
         .ignoresSafeArea()
@@ -80,15 +75,7 @@ struct homepage_Previews: PreviewProvider {
     @StateObject static var store = ProjectStorage()
 
     static var previews: some View {
-        Homepage(projects: $store.projects) {
-            Task {
-                do {
-                    try await store.save(projects: store.projects)
-                } catch {
-                    fatalError(error.localizedDescription)
-                }
-            }
-        }
+        Homepage()
             .task {
                 do {
                     try await store.load()
@@ -96,5 +83,6 @@ struct homepage_Previews: PreviewProvider {
                     fatalError(error.localizedDescription)
                 }
             }
+            .environmentObject(store)
     }
 }

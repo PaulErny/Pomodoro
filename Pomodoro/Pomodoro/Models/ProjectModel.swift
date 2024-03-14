@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ProjectModel: Identifiable, Codable {
+struct ProjectModel: Identifiable, Codable, Equatable {
     var id: UUID
     var name: String
 

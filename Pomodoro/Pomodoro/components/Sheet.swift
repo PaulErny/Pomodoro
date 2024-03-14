@@ -7,10 +7,6 @@
 
 import SwiftUI
 
-protocol SheetDelegate {
-    func onComplete()
-}
-
 struct Sheet<Content: View>: View {
     init(validationButton: ValidationButtonState = .hidden,
          @ViewBuilder _ content: () -> Content,

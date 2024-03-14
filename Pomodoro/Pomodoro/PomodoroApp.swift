@@ -17,15 +17,7 @@ struct PomodoroApp: App {
 //            ContentView()
 //            NavigationStack(path: $navigationPath) {
             NavigationStack {
-                Homepage(projects: $store.projects) {
-                    Task {
-                        do {
-                            try await store.save(projects: store.projects)
-                        } catch {
-                            fatalError(error.localizedDescription)
-                        }
-                    }
-                }
+                Homepage()
                     .task {
                         do {
                             try await store.load()
@@ -33,6 +25,7 @@ struct PomodoroApp: App {
                             fatalError(error.localizedDescription)
                         }
                     }
+                    .environmentObject(store)
             }
 //            }
         }

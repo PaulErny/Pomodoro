@@ -10,7 +10,20 @@ import SwiftUI
 
 @MainActor
 class ProjectStorage: ObservableObject {
-    @Published var projects: [ProjectModel] = []
+    private var isFirstLaunch: Bool = true
+    @Published var projects: [ProjectModel] = [] {
+        didSet {
+            if oldValue != projects && !isFirstLaunch {
+                Task {
+                    do {
+                        try await self.save(projects: projects)
+                    } catch {
+                        fatalError(error.localizedDescription)
+                    }
+                }
+            }
+        }
+    }
 
     private static func fileURL() throws -> URL {
         try FileManager.default.url(for: .documentDirectory,
@@ -22,6 +35,7 @@ class ProjectStorage: ObservableObject {
 
     func load() async throws {
         let task = Task<[ProjectModel], Error> {
+            print("loading")
             let fileURL = try Self.fileURL()
             guard let data = try? Data(contentsOf: fileURL) else {
                 return []
@@ -31,14 +45,18 @@ class ProjectStorage: ObservableObject {
         }
         let projects = try await task.value
         self.projects = projects
+        self.isFirstLaunch = false
+        print("loaded: " + String(projects.count))
     }
     
-    func save(projects: [ProjectModel]) async throws {
+    private func save(projects: [ProjectModel]) async throws {
         let task = Task {
+            print("saving")
             let data = try JSONEncoder().encode(projects)
             let outfile = try Self.fileURL()
             try data.write(to: outfile)
         }
         _ = try await task.value
+        print("saved")
     }
 }

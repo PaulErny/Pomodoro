@@ -7,16 +7,20 @@
 
 import SwiftUI
 
+protocol ProjectCreationSheetDelegate {
+    func onComplete(projectName: String)
+}
+
 struct ProjectCreationSheet: View {
-    @State var tmpText: String = ""
+    @State var projectName: String = ""
     @FocusState private var focusedField: Bool
     @Binding var showingSheet: Bool
-    var delegate: SheetDelegate?
+    var delegate: ProjectCreationSheetDelegate?
     @State private var isContentValid: Bool = true
 
     var body: some View {
         Sheet(validationButton: .visible) {
-            TextField("test", text: $tmpText, prompt: Text("Nom du projet").font(.labelFont).foregroundColor(.label))
+            TextField("test", text: $projectName, prompt: Text("Nom du projet").font(.labelFont).foregroundColor(.label))
                 .font(.labelFont) //tmp
                 .foregroundColor(.label) //tmp
                 .frame(maxWidth: .infinity, minHeight: 54, alignment: .leading)
@@ -33,14 +37,14 @@ struct ProjectCreationSheet: View {
         } onValidation: {
             if checkIsContentValid() {
                 showingSheet = false
-                delegate?.onComplete()
+                delegate?.onComplete(projectName: projectName)
             }
         }
     }
     
     func checkIsContentValid() -> Bool {
         // TODO: .
-        if tmpText.isEmpty {
+        if projectName.isEmpty {
             isContentValid = false // TODO: rouge custom + animation
             return false
         }
