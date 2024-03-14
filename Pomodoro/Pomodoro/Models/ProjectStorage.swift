@@ -35,7 +35,6 @@ class ProjectStorage: ObservableObject {
 
     func load() async throws {
         let task = Task<[ProjectModel], Error> {
-            print("loading")
             let fileURL = try Self.fileURL()
             guard let data = try? Data(contentsOf: fileURL) else {
                 return []
@@ -46,17 +45,14 @@ class ProjectStorage: ObservableObject {
         let projects = try await task.value
         self.projects = projects
         self.isFirstLaunch = false
-        print("loaded: " + String(projects.count))
     }
     
     private func save(projects: [ProjectModel]) async throws {
         let task = Task {
-            print("saving")
             let data = try JSONEncoder().encode(projects)
             let outfile = try Self.fileURL()
             try data.write(to: outfile)
         }
         _ = try await task.value
-        print("saved")
     }
 }

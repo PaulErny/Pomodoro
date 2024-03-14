@@ -10,12 +10,9 @@ import SwiftUI
 @main
 struct PomodoroApp: App {
     @StateObject private var store = ProjectStorage()
-//    @State var navigationPath = NavigationPath()
-    
+
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-//            NavigationStack(path: $navigationPath) {
             NavigationStack {
                 Homepage()
                     .task {
@@ -27,7 +24,6 @@ struct PomodoroApp: App {
                     }
                     .environmentObject(store)
             }
-//            }
         }
     }
 }

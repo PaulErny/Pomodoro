@@ -60,15 +60,6 @@ struct Sheet<Content: View>: View {
     }
 }
 
-//extension Sheet {
-//    init(_ showingSheet: Binding<Bool>, validationButton: ValidationButtonState = .hidden, @ViewBuilder _ content: () -> Content) {
-//        self._showingSheet = showingSheet
-//        self.showOKButton = validationButton
-//        self.content = content()
-//        self.onValidation = nil
-//    }
-//}
-
 struct Sheet_Previews: PreviewProvider {
     @State static var showingSheet: Bool = true
     @State static var tmpText: String = ""
