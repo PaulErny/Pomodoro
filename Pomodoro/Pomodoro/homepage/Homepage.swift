@@ -39,6 +39,10 @@ import SwiftUI
 //}
 
 struct Homepage: View {
+    @Binding var projects: [ProjectModel]
+    @Environment(\.scenePhase) private var scenePhase
+    let saveAction: () -> Void
+    
     var body: some View {
         ZStack {
             VStack(spacing: 45) {
@@ -49,9 +53,12 @@ struct Homepage: View {
                 .padding([.top, .leading], 45)
 
                 VStack {
-                    ForEach(0...10, id: \.self) { i in
-                        ProjectCard(projectName: String(i))
+                    ForEach(ProjectModel.debugSample, id: \.id) { project in
+                        ProjectCard(projectName: project.name)
                     }
+//                    ForEach(projects, id: \.id) { project in
+//                        ProjectCard(projectName: project.name)
+//                    }
                 }
                 .blurScroll(10)
             }
@@ -61,13 +68,33 @@ struct Homepage: View {
                 AddProjectButton()
             }
         }
+        .onChange(of: scenePhase) { phase in
+            if phase == .background { saveAction() }
+        }
         .background(Color.background)
         .ignoresSafeArea()
     }
 }
 
 struct homepage_Previews: PreviewProvider {
+    @StateObject static var store = ProjectStorage()
+
     static var previews: some View {
-        Homepage()
+        Homepage(projects: $store.projects) {
+            Task {
+                do {
+                    try await store.save(projects: store.projects)
+                } catch {
+                    fatalError(error.localizedDescription)
+                }
+            }
+        }
+            .task {
+                do {
+                    try await store.load()
+                } catch {
+                    fatalError(error.localizedDescription)
+                }
+            }
     }
 }

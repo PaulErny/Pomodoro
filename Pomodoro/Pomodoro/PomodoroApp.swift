@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct PomodoroApp: App {
+    @StateObject private var store = ProjectStorage()
 //    @State var navigationPath = NavigationPath()
     
     var body: some Scene {
@@ -16,7 +17,22 @@ struct PomodoroApp: App {
 //            ContentView()
 //            NavigationStack(path: $navigationPath) {
             NavigationStack {
-                Homepage()
+                Homepage(projects: $store.projects) {
+                    Task {
+                        do {
+                            try await store.save(projects: store.projects)
+                        } catch {
+                            fatalError(error.localizedDescription)
+                        }
+                    }
+                }
+                    .task {
+                        do {
+                            try await store.load()
+                        } catch {
+                            fatalError(error.localizedDescription)
+                        }
+                    }
             }
 //            }
         }

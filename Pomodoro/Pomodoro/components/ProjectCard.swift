@@ -14,7 +14,7 @@ struct ProjectCard: View {
         
         HStack {
             VStack(alignment: .leading, spacing: 0) {
-                Text("projet " + projectName)
+                Text(projectName)
                     .style(.label)
                     .padding(.leading, 30)
                     .padding(.top, 7)

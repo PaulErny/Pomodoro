@@ -55,6 +55,12 @@
 		DAA2BD962BA061CE00017EC3 /* Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BD952BA061CE00017EC3 /* Sheet.swift */; };
 		DAA2BD972BA061CE00017EC3 /* Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BD952BA061CE00017EC3 /* Sheet.swift */; };
 		DAA2BD982BA061CE00017EC3 /* Sheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BD952BA061CE00017EC3 /* Sheet.swift */; };
+		DAA2BD9B2BA3039400017EC3 /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BD9A2BA3039400017EC3 /* ProjectModel.swift */; };
+		DAA2BD9C2BA3039400017EC3 /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BD9A2BA3039400017EC3 /* ProjectModel.swift */; };
+		DAA2BD9D2BA3039400017EC3 /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BD9A2BA3039400017EC3 /* ProjectModel.swift */; };
+		DAA2BD9F2BA304B300017EC3 /* ProjectStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BD9E2BA304B300017EC3 /* ProjectStorage.swift */; };
+		DAA2BDA02BA304B300017EC3 /* ProjectStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BD9E2BA304B300017EC3 /* ProjectStorage.swift */; };
+		DAA2BDA12BA304B300017EC3 /* ProjectStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BD9E2BA304B300017EC3 /* ProjectStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +107,8 @@
 		DA5888B32B9A020C007BA4B0 /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
 		DAA2BD912B9F4B6F00017EC3 /* ProjectCreationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCreationSheet.swift; sourceTree = "<group>"; };
 		DAA2BD952BA061CE00017EC3 /* Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheet.swift; sourceTree = "<group>"; };
+		DAA2BD9A2BA3039400017EC3 /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
+		DAA2BD9E2BA304B300017EC3 /* ProjectStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +162,7 @@
 				DA1676AA2B95DBA2003DC9CD /* Info.plist */,
 				DA11ECFF2B91D7DD0044CD17 /* PomodoroApp.swift */,
 				DA11ED012B91D7DD0044CD17 /* ContentView.swift */,
+				DAA2BD992BA3036D00017EC3 /* Models */,
 				DA1676B52B95E49F003DC9CD /* Style */,
 				DA11ED032B91D7DF0044CD17 /* Assets.xcassets */,
 				DA1676B82B95FF7C003DC9CD /* homepage */,
@@ -238,6 +247,15 @@
 				DA5888B32B9A020C007BA4B0 /* CornerRadius.swift */,
 			);
 			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		DAA2BD992BA3036D00017EC3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DAA2BD9A2BA3039400017EC3 /* ProjectModel.swift */,
+				DAA2BD9E2BA304B300017EC3 /* ProjectStorage.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,6 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA2BD9B2BA3039400017EC3 /* ProjectModel.swift in Sources */,
 				DA5888B22B99FE82007BA4B0 /* CustomSheet.swift in Sources */,
 				DA16769C2B95D8B5003DC9CD /* Fonts.swift in Sources */,
 				DA1676CB2B98BDDB003DC9CD /* BlurScroll.swift in Sources */,
@@ -392,6 +411,7 @@
 				DA1676C22B961291003DC9CD /* ProjectCard.swift in Sources */,
 				DA1676C62B98B859003DC9CD /* AddProjectButton.swift in Sources */,
 				DA1676BE2B9601F3003DC9CD /* Text.swift in Sources */,
+				DAA2BD9F2BA304B300017EC3 /* ProjectStorage.swift in Sources */,
 				DAA2BD962BA061CE00017EC3 /* Sheet.swift in Sources */,
 				DAA2BD922B9F4B6F00017EC3 /* ProjectCreationSheet.swift in Sources */,
 				DA11ED002B91D7DD0044CD17 /* PomodoroApp.swift in Sources */,
@@ -406,12 +426,14 @@
 				DAA2BD932B9F4B6F00017EC3 /* ProjectCreationSheet.swift in Sources */,
 				DAA2BD8D2B9F479300017EC3 /* Colors.swift in Sources */,
 				DA11ED112B91D7DF0044CD17 /* PomodoroTests.swift in Sources */,
+				DAA2BD9C2BA3039400017EC3 /* ProjectModel.swift in Sources */,
 				DA1676CC2B98BDDB003DC9CD /* BlurScroll.swift in Sources */,
 				DAA2BD972BA061CE00017EC3 /* Sheet.swift in Sources */,
 				DA1676C32B961291003DC9CD /* ProjectCard.swift in Sources */,
 				DA1676C72B98B859003DC9CD /* AddProjectButton.swift in Sources */,
 				DA1676BF2B9601F3003DC9CD /* Text.swift in Sources */,
 				DA1676BB2B95FFB9003DC9CD /* Homepage.swift in Sources */,
+				DAA2BDA02BA304B300017EC3 /* ProjectStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,11 +446,13 @@
 				DAA2BD8E2B9F479300017EC3 /* Colors.swift in Sources */,
 				DA11ED1D2B91D7DF0044CD17 /* PomodoroUITestsLaunchTests.swift in Sources */,
 				DA1676CD2B98BDDB003DC9CD /* BlurScroll.swift in Sources */,
+				DAA2BDA12BA304B300017EC3 /* ProjectStorage.swift in Sources */,
 				DA1676C82B98B859003DC9CD /* AddProjectButton.swift in Sources */,
 				DAA2BD982BA061CE00017EC3 /* Sheet.swift in Sources */,
 				DA11ED1B2B91D7DF0044CD17 /* PomodoroUITests.swift in Sources */,
 				DA1676C02B9601F3003DC9CD /* Text.swift in Sources */,
 				DA1676BC2B95FFB9003DC9CD /* Homepage.swift in Sources */,
+				DAA2BD9D2BA3039400017EC3 /* ProjectModel.swift in Sources */,
 				DA1676C42B961291003DC9CD /* ProjectCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
