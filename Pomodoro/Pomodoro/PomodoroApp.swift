@@ -9,12 +9,16 @@ import SwiftUI
 
 @main
 struct PomodoroApp: App {
+//    @State var navigationPath = NavigationPath()
+    
     var body: some Scene {
         WindowGroup {
 //            ContentView()
-            NavigationView {
+//            NavigationStack(path: $navigationPath) {
+            NavigationStack {
                 Homepage()
             }
+//            }
         }
     }
 }

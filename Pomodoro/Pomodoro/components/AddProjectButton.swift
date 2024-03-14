@@ -9,9 +9,9 @@ import SwiftUI
 
 struct AddProjectButton: View, SheetDelegate {
     @State private var showingSheet = false
+    @State var testNav: Bool = false
 
     var body: some View {
-
         Button {
             showingSheet.toggle()
         } label: {
@@ -31,20 +31,24 @@ struct AddProjectButton: View, SheetDelegate {
                 .menuIndicator(.visible)
                 .presentationDragIndicator(.visible)
         }
+        .navigationDestination(isPresented: $testNav, destination: {Text("test")})
     }
     
     func onComplete() {
         print("complete")
+        testNav = true
     }
 }
 
 struct AddProjectButton_Previews: PreviewProvider {
     static var previews: some View {
-        VStack {
-            Spacer()
-            AddProjectButton()
+        NavigationStack {
+            VStack {
+                Spacer()
+                AddProjectButton()
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color.background)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.background)
     }
 }
