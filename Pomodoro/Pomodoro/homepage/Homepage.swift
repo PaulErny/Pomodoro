@@ -7,50 +7,11 @@
 
 import SwiftUI
 
-//struct Homepage: View {
-//    var body: some View {
-//        VStack(spacing: 82) {
-//            HStack {
-//                Text("MES\nPROJETS")
-//                    .style(.title)
-//                .multilineTextAlignment(.leading)
-//                Spacer()
-//            }
-//            .padding([.top, .leading], 45)
-//            .ignoresSafeArea()
-//            VStack(alignment: .leading, spacing: 82) {
-//                Image("Tumbleweed")
-//                    .renderingMode(.template)
-//                    .foregroundColor(Color.cardBackground)
-//                Text("Créez\nvotre\npremier\nprojet")
-//                    .style(.titleAlternate)
-//                .multilineTextAlignment(.leading)
-//            }
-//            .padding(.top, 54)
-//            RoundedRectangle(cornerRadius: 20)
-//                .fill(Color.title)
-//                .frame(width: 66, height: 66)
-//                .shadow(color: Color("testBtnShadow"), radius: 0, x: -3, y: 4)
-//        }
-//        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-//        .background(Color.background)
-//        .ignoresSafeArea()
-//    }
-//}
-
 struct Homepage: View {
     @EnvironmentObject var store: ProjectStorage
     
-    var body: some View {
-        ZStack {
-            VStack(spacing: 45) {
-                Text("MES\nPROJETS")
-                    .style(.title)
-                .multilineTextAlignment(.leading)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding([.top, .leading], 45)
-
-                VStack {
+    private var projectList: some View {
+        VStack {
 //                    ForEach(ProjectModel.debugSample, id: \.id) { project in
 //                        ProjectCard(projectName: project.name) {
 //                            withAnimation {
@@ -58,17 +19,48 @@ struct Homepage: View {
 //                            }
 //                        }
 //                    }
-                     ForEach(store.projects, id: \.id) { project in
-                        ProjectCard(projectName: project.name) {
-                            withAnimation {
-                                removeProject(id: project.id)
-                            }
-                        }
+             ForEach(store.projects, id: \.id) { project in
+                ProjectCard(projectName: project.name) {
+                    withAnimation {
+                        removeProject(id: project.id)
                     }
                 }
-                .blurScroll(10)
             }
-            
+        }
+        .blurScroll(10)
+    }
+    
+    @ViewBuilder private var emptyHomepage: some View {
+        VStack(alignment: .leading, spacing: 82) {
+            Image("Tumbleweed")
+                .renderingMode(.template)
+                .foregroundColor(Color.tumbleweed)
+            Text("Créez\nvotre\npremier\nprojet")
+                .style(.titleAlternate)
+            .multilineTextAlignment(.leading)
+            Spacer()
+        }
+        .padding(.top, 91)
+    }
+    
+    var body: some View {
+        ZStack {
+            VStack(spacing: 45) {
+                Text("MES\nPROJETS")
+                    .style(.title)
+                    .multilineTextAlignment(.leading)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding([.top, .leading], 45)
+
+                if store.projects.isEmpty {
+                    emptyHomepage
+                        .animation(.easeInOut(duration: 0.2), value: store.projects.isEmpty)
+                } else {
+                    projectList
+                        .animation(.easeInOut(duration: 0.2), value: store.projects.isEmpty)
+                }
+            }
+
             VStack {
                 Spacer()
                 AddProjectButton()
