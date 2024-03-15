@@ -36,12 +36,12 @@ private struct BlurScroll: ViewModifier {
                         .mask(
                             VStack {
                                 invertedGradient
-                                
                                     .frame(height: topGeo.size.height, alignment: .top)
                                     .offset(y:  -scrollPosition.y )
                                 Spacer()
                             }
                         )
+                        .allowsHitTesting(true)
                     
                     content
                         .blur(radius: blur)
@@ -51,6 +51,7 @@ private struct BlurScroll: ViewModifier {
                             .offset(y:  -scrollPosition.y )
                         )
                         .ignoresSafeArea()
+                        .allowsHitTesting(false)
                 }
                 .padding(.bottom, topGeo.size.height * 0.25)
                 .background(GeometryReader { geo in

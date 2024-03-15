@@ -52,10 +52,18 @@ struct Homepage: View {
 
                 VStack {
 //                    ForEach(ProjectModel.debugSample, id: \.id) { project in
-//                        ProjectCard(projectName: project.name)
+//                        ProjectCard(projectName: project.name) {
+//                            withAnimation {
+//                                removeProject(id: project.id)
+//                            }
+//                        }
 //                    }
-                    ForEach(store.projects, id: \.id) { project in
-                        ProjectCard(projectName: project.name)
+                     ForEach(store.projects, id: \.id) { project in
+                        ProjectCard(projectName: project.name) {
+                            withAnimation {
+                                removeProject(id: project.id)
+                            }
+                        }
                     }
                 }
                 .blurScroll(10)
@@ -68,6 +76,10 @@ struct Homepage: View {
         }
         .background(Color.background)
         .ignoresSafeArea()
+    }
+    
+    private func removeProject(id: UUID) {
+        store.projects.removeAll(where: { $0.id == id })
     }
 }
 
