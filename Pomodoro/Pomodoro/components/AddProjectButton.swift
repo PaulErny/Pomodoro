@@ -33,7 +33,7 @@ struct AddProjectButton: View, ProjectCreationSheetDelegate {
                 .menuIndicator(.visible)
                 .presentationDragIndicator(.visible)
         }
-        .navigationDestination(isPresented: $testNav, destination: {Text(newProject?.name ?? "error")})
+        .navigationDestination(isPresented: $testNav, destination: { ProjectView() })
     }
     
     func onComplete(projectName: String) {

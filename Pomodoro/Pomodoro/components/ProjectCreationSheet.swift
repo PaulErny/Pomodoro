@@ -20,6 +20,7 @@ struct ProjectCreationSheet: View {
 
     var body: some View {
         Sheet(validationButton: .visible) {
+            // TODO: suppr "test
             TextField("test", text: $projectName, prompt: Text("Nom du projet").font(.labelFont).foregroundColor(.label))
                 .font(.labelFont) //tmp
                 .foregroundColor(.label) //tmp
@@ -27,7 +28,10 @@ struct ProjectCreationSheet: View {
                 .padding(.leading, 45)
                 .background(
                     Rectangle()
-                        .fill(isContentValid ? Color.inputBackground : .red)
+                        .fill(
+                            .shadow(.inner(color: .black.opacity(0.15), radius: 4 ))
+                        )
+                        .foregroundStyle(isContentValid ? Color.inputBackground : .red) // TODO: changer .red
                         .border(Color.cardBackground, width: 2)
                 )
                 .focused($focusedField)

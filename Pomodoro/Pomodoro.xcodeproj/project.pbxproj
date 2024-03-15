@@ -61,6 +61,9 @@
 		DAA2BD9F2BA304B300017EC3 /* ProjectStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BD9E2BA304B300017EC3 /* ProjectStorage.swift */; };
 		DAA2BDA02BA304B300017EC3 /* ProjectStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BD9E2BA304B300017EC3 /* ProjectStorage.swift */; };
 		DAA2BDA12BA304B300017EC3 /* ProjectStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BD9E2BA304B300017EC3 /* ProjectStorage.swift */; };
+		DAA2BDB12BA4A56E00017EC3 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BDB02BA4A56E00017EC3 /* ProjectView.swift */; };
+		DAA2BDB22BA4A56E00017EC3 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BDB02BA4A56E00017EC3 /* ProjectView.swift */; };
+		DAA2BDB32BA4A56E00017EC3 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BDB02BA4A56E00017EC3 /* ProjectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +112,7 @@
 		DAA2BD952BA061CE00017EC3 /* Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheet.swift; sourceTree = "<group>"; };
 		DAA2BD9A2BA3039400017EC3 /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
 		DAA2BD9E2BA304B300017EC3 /* ProjectStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStorage.swift; sourceTree = "<group>"; };
+		DAA2BDB02BA4A56E00017EC3 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +169,7 @@
 				DAA2BD992BA3036D00017EC3 /* Models */,
 				DA1676B52B95E49F003DC9CD /* Style */,
 				DA11ED032B91D7DF0044CD17 /* Assets.xcassets */,
-				DA1676B82B95FF7C003DC9CD /* homepage */,
+				DAA2BDAF2BA4A51E00017EC3 /* Views */,
 				DA1676C92B98BCDD003DC9CD /* ViewModifiers */,
 				DA16769A2B95D877003DC9CD /* components */,
 				DA11ED052B91D7DF0044CD17 /* Preview Content */,
@@ -256,6 +260,23 @@
 				DAA2BD9E2BA304B300017EC3 /* ProjectStorage.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DAA2BDAE2BA4A50B00017EC3 /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				DAA2BDB02BA4A56E00017EC3 /* ProjectView.swift */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		DAA2BDAF2BA4A51E00017EC3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DAA2BDAE2BA4A50B00017EC3 /* Project */,
+				DA1676B82B95FF7C003DC9CD /* homepage */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,6 +435,7 @@
 				DAA2BD9F2BA304B300017EC3 /* ProjectStorage.swift in Sources */,
 				DAA2BD962BA061CE00017EC3 /* Sheet.swift in Sources */,
 				DAA2BD922B9F4B6F00017EC3 /* ProjectCreationSheet.swift in Sources */,
+				DAA2BDB12BA4A56E00017EC3 /* ProjectView.swift in Sources */,
 				DA11ED002B91D7DD0044CD17 /* PomodoroApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +456,7 @@
 				DA1676BF2B9601F3003DC9CD /* Text.swift in Sources */,
 				DA1676BB2B95FFB9003DC9CD /* Homepage.swift in Sources */,
 				DAA2BDA02BA304B300017EC3 /* ProjectStorage.swift in Sources */,
+				DAA2BDB22BA4A56E00017EC3 /* ProjectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +468,7 @@
 				DAA2BD8C2B9F478000017EC3 /* Fonts.swift in Sources */,
 				DAA2BD8E2B9F479300017EC3 /* Colors.swift in Sources */,
 				DA11ED1D2B91D7DF0044CD17 /* PomodoroUITestsLaunchTests.swift in Sources */,
+				DAA2BDB32BA4A56E00017EC3 /* ProjectView.swift in Sources */,
 				DA1676CD2B98BDDB003DC9CD /* BlurScroll.swift in Sources */,
 				DAA2BDA12BA304B300017EC3 /* ProjectStorage.swift in Sources */,
 				DA1676C82B98B859003DC9CD /* AddProjectButton.swift in Sources */,
