@@ -30,7 +30,7 @@ private struct BlurScroll: ViewModifier {
                                               endPoint: .top)
         
         GeometryReader { topGeo in
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 ZStack(alignment: .top) {
                     content
                         .mask(

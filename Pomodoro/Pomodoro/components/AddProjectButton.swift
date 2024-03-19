@@ -9,9 +9,10 @@ import SwiftUI
 
 struct AddProjectButton: View, ProjectCreationSheetDelegate {
     @State private var showingSheet = false
-    @State var testNav: Bool = false
+    @State var shouldOpenProject: Bool = false
     @EnvironmentObject var store: ProjectStorage
-    @State private var newProject: ProjectModel?
+//    @State private var newProject: ProjectModel?
+    @State private var newProject = ProjectModel(name: "temporary")
 
     var body: some View {
         Button {
@@ -33,14 +34,14 @@ struct AddProjectButton: View, ProjectCreationSheetDelegate {
                 .menuIndicator(.visible)
                 .presentationDragIndicator(.visible)
         }
-        .navigationDestination(isPresented: $testNav, destination: { ProjectView() })
+        .navigationDestination(isPresented: $shouldOpenProject, destination: { ProjectView(project: newProject) })
     }
     
     func onComplete(projectName: String) {
         let newProject = ProjectModel(name: projectName)
         store.projects.append(newProject)
         self.newProject = newProject
-        testNav = true
+        shouldOpenProject = true
     }
 }
 

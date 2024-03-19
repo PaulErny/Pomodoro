@@ -9,7 +9,13 @@ import SwiftUI
 
 struct ProjectView: View {
     @Environment(\.dismiss) private var dismiss
+    @EnvironmentObject var store: ProjectStorage
+    @State var project: ProjectModel
     
+    init(project: ProjectModel) {
+        self.project = project
+    }
+
     var body: some View {
         VStack(spacing: 10) {
             //  stats
@@ -34,7 +40,7 @@ struct ProjectView: View {
                 )
                 .padding([.leading, .trailing], 7)
                 
-            Text("Hello, World!")
+            Text(project.name)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .background(Color.background)
@@ -60,8 +66,12 @@ struct ProjectView: View {
     }
 }
 
-#Preview {
-    NavigationStack {
-        ProjectView()
+struct ProjectView_Previews: PreviewProvider {
+    static let project = ProjectModel(name: "project 1")
+
+    static var previews: some View {
+        NavigationStack {
+            ProjectView(project: project)
+        }
     }
 }

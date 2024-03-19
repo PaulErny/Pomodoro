@@ -11,7 +11,7 @@ struct Homepage: View {
     @EnvironmentObject var store: ProjectStorage
     
     private var projectList: some View {
-        VStack {
+        LazyVStack {
 //                    ForEach(ProjectModel.debugSample, id: \.id) { project in
 //                        ProjectCard(projectName: project.name) {
 //                            withAnimation {
@@ -20,7 +20,7 @@ struct Homepage: View {
 //                        }
 //                    }
              ForEach(store.projects, id: \.id) { project in
-                ProjectCard(projectName: project.name) {
+                 ProjectCard(project: project) {
                     withAnimation {
                         removeProject(id: project.id)
                     }
