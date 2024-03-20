@@ -45,8 +45,6 @@
 		DA5888B42B9A020C007BA4B0 /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5888B32B9A020C007BA4B0 /* CornerRadius.swift */; };
 		DAA2BD8B2B9F478000017EC3 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16769B2B95D8B5003DC9CD /* Fonts.swift */; };
 		DAA2BD8C2B9F478000017EC3 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16769B2B95D8B5003DC9CD /* Fonts.swift */; };
-		DAA2BD8D2B9F479300017EC3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676B62B95E4D7003DC9CD /* Colors.swift */; };
-		DAA2BD8E2B9F479300017EC3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676B62B95E4D7003DC9CD /* Colors.swift */; };
 		DAA2BD8F2B9F47B700017EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA11ED032B91D7DF0044CD17 /* Assets.xcassets */; };
 		DAA2BD902B9F47B800017EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA11ED032B91D7DF0044CD17 /* Assets.xcassets */; };
 		DAA2BD922B9F4B6F00017EC3 /* ProjectCreationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BD912B9F4B6F00017EC3 /* ProjectCreationSheet.swift */; };
@@ -64,6 +62,19 @@
 		DAA2BDB12BA4A56E00017EC3 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BDB02BA4A56E00017EC3 /* ProjectView.swift */; };
 		DAA2BDB22BA4A56E00017EC3 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BDB02BA4A56E00017EC3 /* ProjectView.swift */; };
 		DAA2BDB32BA4A56E00017EC3 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BDB02BA4A56E00017EC3 /* ProjectView.swift */; };
+		DAA2BDB52BA9E21F00017EC3 /* TaskCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BDB42BA9E21F00017EC3 /* TaskCard.swift */; };
+		DAA2BDB62BA9E21F00017EC3 /* TaskCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BDB42BA9E21F00017EC3 /* TaskCard.swift */; };
+		DAA2BDB72BA9E21F00017EC3 /* TaskCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BDB42BA9E21F00017EC3 /* TaskCard.swift */; };
+		DAA2BDB92BA9E76F00017EC3 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BDB82BA9E76F00017EC3 /* TaskModel.swift */; };
+		DAA2BDBA2BA9E77000017EC3 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BDB82BA9E76F00017EC3 /* TaskModel.swift */; };
+		DAA2BDBB2BA9E77000017EC3 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BDB82BA9E76F00017EC3 /* TaskModel.swift */; };
+		DAA2BDBD2BA9E81500017EC3 /* LabelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BDBC2BA9E81500017EC3 /* LabelModel.swift */; };
+		DAA2BDBE2BA9E81500017EC3 /* LabelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BDBC2BA9E81500017EC3 /* LabelModel.swift */; };
+		DAA2BDBF2BA9E81500017EC3 /* LabelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BDBC2BA9E81500017EC3 /* LabelModel.swift */; };
+		DAC8FB8A2BAAE10700398503 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676B62B95E4D7003DC9CD /* Colors.swift */; };
+		DAC8FB8C2BAB232800398503 /* TagsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB8B2BAB232800398503 /* TagsCollectionView.swift */; };
+		DAC8FB8D2BAB232900398503 /* TagsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB8B2BAB232800398503 /* TagsCollectionView.swift */; };
+		DAC8FB8E2BAB232900398503 /* TagsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB8B2BAB232800398503 /* TagsCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +124,10 @@
 		DAA2BD9A2BA3039400017EC3 /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
 		DAA2BD9E2BA304B300017EC3 /* ProjectStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStorage.swift; sourceTree = "<group>"; };
 		DAA2BDB02BA4A56E00017EC3 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
+		DAA2BDB42BA9E21F00017EC3 /* TaskCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCard.swift; sourceTree = "<group>"; };
+		DAA2BDB82BA9E76F00017EC3 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		DAA2BDBC2BA9E81500017EC3 /* LabelModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelModel.swift; sourceTree = "<group>"; };
+		DAC8FB8B2BAB232800398503 /* TagsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +223,8 @@
 				DA1676C52B98B858003DC9CD /* AddProjectButton.swift */,
 				DAA2BD912B9F4B6F00017EC3 /* ProjectCreationSheet.swift */,
 				DAA2BD952BA061CE00017EC3 /* Sheet.swift */,
+				DAC8FB8B2BAB232800398503 /* TagsCollectionView.swift */,
+				DAA2BDB42BA9E21F00017EC3 /* TaskCard.swift */,
 				DA1676C12B961291003DC9CD /* ProjectCard.swift */,
 			);
 			path = components;
@@ -257,6 +274,8 @@
 			isa = PBXGroup;
 			children = (
 				DAA2BD9A2BA3039400017EC3 /* ProjectModel.swift */,
+				DAA2BDB82BA9E76F00017EC3 /* TaskModel.swift */,
+				DAA2BDBC2BA9E81500017EC3 /* LabelModel.swift */,
 				DAA2BD9E2BA304B300017EC3 /* ProjectStorage.swift */,
 			);
 			path = Models;
@@ -422,7 +441,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAA2BD9B2BA3039400017EC3 /* ProjectModel.swift in Sources */,
+				DAC8FB8C2BAB232800398503 /* TagsCollectionView.swift in Sources */,
 				DA5888B22B99FE82007BA4B0 /* CustomSheet.swift in Sources */,
+				DAA2BDB52BA9E21F00017EC3 /* TaskCard.swift in Sources */,
 				DA16769C2B95D8B5003DC9CD /* Fonts.swift in Sources */,
 				DA1676CB2B98BDDB003DC9CD /* BlurScroll.swift in Sources */,
 				DA1676B72B95E4D7003DC9CD /* Colors.swift in Sources */,
@@ -432,11 +453,13 @@
 				DA1676C22B961291003DC9CD /* ProjectCard.swift in Sources */,
 				DA1676C62B98B859003DC9CD /* AddProjectButton.swift in Sources */,
 				DA1676BE2B9601F3003DC9CD /* Text.swift in Sources */,
+				DAA2BDB92BA9E76F00017EC3 /* TaskModel.swift in Sources */,
 				DAA2BD9F2BA304B300017EC3 /* ProjectStorage.swift in Sources */,
 				DAA2BD962BA061CE00017EC3 /* Sheet.swift in Sources */,
 				DAA2BD922B9F4B6F00017EC3 /* ProjectCreationSheet.swift in Sources */,
 				DAA2BDB12BA4A56E00017EC3 /* ProjectView.swift in Sources */,
 				DA11ED002B91D7DD0044CD17 /* PomodoroApp.swift in Sources */,
+				DAA2BDBD2BA9E81500017EC3 /* LabelModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,15 +469,18 @@
 			files = (
 				DAA2BD8B2B9F478000017EC3 /* Fonts.swift in Sources */,
 				DAA2BD932B9F4B6F00017EC3 /* ProjectCreationSheet.swift in Sources */,
-				DAA2BD8D2B9F479300017EC3 /* Colors.swift in Sources */,
 				DA11ED112B91D7DF0044CD17 /* PomodoroTests.swift in Sources */,
 				DAA2BD9C2BA3039400017EC3 /* ProjectModel.swift in Sources */,
 				DA1676CC2B98BDDB003DC9CD /* BlurScroll.swift in Sources */,
 				DAA2BD972BA061CE00017EC3 /* Sheet.swift in Sources */,
 				DA1676C32B961291003DC9CD /* ProjectCard.swift in Sources */,
+				DAA2BDB62BA9E21F00017EC3 /* TaskCard.swift in Sources */,
 				DA1676C72B98B859003DC9CD /* AddProjectButton.swift in Sources */,
+				DAC8FB8D2BAB232900398503 /* TagsCollectionView.swift in Sources */,
 				DA1676BF2B9601F3003DC9CD /* Text.swift in Sources */,
 				DA1676BB2B95FFB9003DC9CD /* Homepage.swift in Sources */,
+				DAA2BDBE2BA9E81500017EC3 /* LabelModel.swift in Sources */,
+				DAA2BDBA2BA9E77000017EC3 /* TaskModel.swift in Sources */,
 				DAA2BDA02BA304B300017EC3 /* ProjectStorage.swift in Sources */,
 				DAA2BDB22BA4A56E00017EC3 /* ProjectView.swift in Sources */,
 			);
@@ -466,8 +492,8 @@
 			files = (
 				DAA2BD942B9F4B6F00017EC3 /* ProjectCreationSheet.swift in Sources */,
 				DAA2BD8C2B9F478000017EC3 /* Fonts.swift in Sources */,
-				DAA2BD8E2B9F479300017EC3 /* Colors.swift in Sources */,
 				DA11ED1D2B91D7DF0044CD17 /* PomodoroUITestsLaunchTests.swift in Sources */,
+				DAC8FB8A2BAAE10700398503 /* Colors.swift in Sources */,
 				DAA2BDB32BA4A56E00017EC3 /* ProjectView.swift in Sources */,
 				DA1676CD2B98BDDB003DC9CD /* BlurScroll.swift in Sources */,
 				DAA2BDA12BA304B300017EC3 /* ProjectStorage.swift in Sources */,
@@ -475,9 +501,13 @@
 				DAA2BD982BA061CE00017EC3 /* Sheet.swift in Sources */,
 				DA11ED1B2B91D7DF0044CD17 /* PomodoroUITests.swift in Sources */,
 				DA1676C02B9601F3003DC9CD /* Text.swift in Sources */,
+				DAA2BDBF2BA9E81500017EC3 /* LabelModel.swift in Sources */,
 				DA1676BC2B95FFB9003DC9CD /* Homepage.swift in Sources */,
 				DAA2BD9D2BA3039400017EC3 /* ProjectModel.swift in Sources */,
 				DA1676C42B961291003DC9CD /* ProjectCard.swift in Sources */,
+				DAA2BDBB2BA9E77000017EC3 /* TaskModel.swift in Sources */,
+				DAA2BDB72BA9E21F00017EC3 /* TaskCard.swift in Sources */,
+				DAC8FB8E2BAB232900398503 /* TagsCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

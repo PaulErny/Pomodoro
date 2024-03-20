@@ -10,10 +10,12 @@ import Foundation
 struct ProjectModel: Identifiable, Codable, Equatable {
     var id: UUID
     var name: String
+    var tasks: [TaskModel]
 
-    init(id: UUID = UUID(), name: String) {
+    init(id: UUID = UUID(), name: String, tasks: [TaskModel] = []) {
         self.id = id
         self.name = name
+        self.tasks = tasks
     }
 }
 

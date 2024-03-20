@@ -39,8 +39,7 @@ struct ProjectView: View {
                     
                 )
                 .padding([.leading, .trailing], 7)
-                
-            Text(project.name)
+
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         .background(Color.background)
@@ -49,7 +48,7 @@ struct ProjectView: View {
         .navigationBarBackButtonHidden()
         .toolbar {
             ToolbarItem(placement: .principal) {
-                Text("test")
+                Text(project.name)
                     .style(.label)
             }
 
