@@ -39,6 +39,10 @@ struct ProjectView: View {
                     
                 )
                 .padding([.leading, .trailing], 7)
+            
+            ForEach(project.tasks, id: \.id) { task in
+                TaskCard(task: task)
+            }
 
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
@@ -66,7 +70,7 @@ struct ProjectView: View {
 }
 
 struct ProjectView_Previews: PreviewProvider {
-    static let project = ProjectModel(name: "project 1")
+    static let project = ProjectModel.debugProject
 
     static var previews: some View {
         NavigationStack {

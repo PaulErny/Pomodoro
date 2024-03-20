@@ -33,4 +33,20 @@ extension ProjectModel {
         ProjectModel(name: "project 9"),
         ProjectModel(name: "project 10")
     ]
+    
+    static let debugProject = ProjectModel(name: "project 1", tasks: [
+        TaskModel(name: "task 1", length: 1, isComplete: true),
+        TaskModel(name: "task 2", length: 2, isComplete: true),
+        TaskModel(name: "task 3", length: 1, labels: [
+            LabelModel(name: "prio 1", color: .red),
+            LabelModel(name: "testLongLabel", color: .green),
+        ], isComplete: false),
+        TaskModel(name: "task 4", length: 3, labels: [
+            LabelModel(name: "prio 1", color: .red),
+            LabelModel(name: "testLongLabel", color: .green),
+            LabelModel(name: "testLongLabel", color: .blue),
+            LabelModel(name: "testLongLabel", color: .blue),
+            LabelModel(name: "testLongLabel", color: .blue),
+        ], isComplete: false)
+    ])
 }

@@ -57,7 +57,7 @@ struct TaskCard: View {
                         .style(.sublabel)
                         .padding(.trailing, 5)
                     HStack(spacing: 2) {
-                        ForEach(0...task.length, id: \.self) {_ in
+                        ForEach(0...task.length - 1, id: \.self) {_ in
                             Image("Clock")
                         }
                     }.padding(.trailing, 10)
