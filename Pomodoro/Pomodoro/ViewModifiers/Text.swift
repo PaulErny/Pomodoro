@@ -84,6 +84,19 @@ extension ViewModifier where Self == Sublabel {
     static var sublabel: Sublabel { Sublabel() }
 }
 
+struct SublabelLight: TextStyle, ViewModifier {
+    
+    func body(content: Content) -> some View {
+        content
+            .font(.lightSublabelFont)
+            .foregroundColor(.sublabel)
+    }
+}
+
+extension ViewModifier where Self == Sublabel {
+    static var sublabelLight: SublabelLight { SublabelLight() }
+}
+
 extension Text {
     func style<Style: ViewModifier>(_ style: Style) -> some View {
         modifier(style)

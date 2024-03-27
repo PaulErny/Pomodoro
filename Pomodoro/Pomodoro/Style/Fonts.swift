@@ -11,12 +11,15 @@ import SwiftUI
 extension Font {
     enum Manrope {
         case semibold
+        case light
         case custom(String)
         
         var value: String  {
             switch self {
             case .semibold:
                 return "SemiBold"
+            case .light:
+                return "Light"
             case .custom(let type):
                 return type
             }
@@ -50,6 +53,10 @@ extension Font {
 
     static var sublabelFont: Font {
         .manrope(.semibold, size: 12)
+    }
+    
+    static var lightSublabelFont: Font {
+        .manrope(.light, size: 12)
     }
 
     static func montserrat(_ type: Montserrat, size: CGFloat = 36) -> Font {
