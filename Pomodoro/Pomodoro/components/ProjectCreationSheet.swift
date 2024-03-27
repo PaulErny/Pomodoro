@@ -21,7 +21,7 @@ struct ProjectCreationSheet: View {
     var body: some View {
         Sheet(validationButton: .visible) {
             // TODO: suppr "test
-            TextField("test", text: $projectName, prompt: Text("Nom du projet").font(.labelFont).foregroundColor(.label))
+            TextField("Project name", text: $projectName, prompt: Text("Nom du projet").font(.labelFont).foregroundColor(.label))
                 .font(.labelFont) //tmp
                 .foregroundColor(.label) //tmp
                 .frame(maxWidth: .infinity, minHeight: 54, alignment: .leading)
