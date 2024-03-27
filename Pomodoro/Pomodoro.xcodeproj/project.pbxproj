@@ -84,9 +84,9 @@
 		DAC8FB992BAB49D500398503 /* ProjectStatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB982BAB49D500398503 /* ProjectStatCard.swift */; };
 		DAC8FB9A2BAB49D500398503 /* ProjectStatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB982BAB49D500398503 /* ProjectStatCard.swift */; };
 		DAC8FB9B2BAB49D500398503 /* ProjectStatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB982BAB49D500398503 /* ProjectStatCard.swift */; };
-		DAC8FB9D2BAB4A1100398503 /* ProjectStatClickableCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB9C2BAB4A1100398503 /* ProjectStatClickableCard.swift */; };
-		DAC8FB9E2BAB4A1100398503 /* ProjectStatClickableCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB9C2BAB4A1100398503 /* ProjectStatClickableCard.swift */; };
-		DAC8FB9F2BAB4A1100398503 /* ProjectStatClickableCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB9C2BAB4A1100398503 /* ProjectStatClickableCard.swift */; };
+		DAC8FB9D2BAB4A1100398503 /* ProjectStatClickableTimeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB9C2BAB4A1100398503 /* ProjectStatClickableTimeCard.swift */; };
+		DAC8FB9E2BAB4A1100398503 /* ProjectStatClickableTimeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB9C2BAB4A1100398503 /* ProjectStatClickableTimeCard.swift */; };
+		DAC8FB9F2BAB4A1100398503 /* ProjectStatClickableTimeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB9C2BAB4A1100398503 /* ProjectStatClickableTimeCard.swift */; };
 		DAC8FBA12BAB4B1100398503 /* Manrope-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAC8FBA02BAB4B1100398503 /* Manrope-Light.ttf */; };
 		DAC8FBA22BAB4B1100398503 /* Manrope-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAC8FBA02BAB4B1100398503 /* Manrope-Light.ttf */; };
 		DAC8FBA32BAB4B1100398503 /* Manrope-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAC8FBA02BAB4B1100398503 /* Manrope-Light.ttf */; };
@@ -152,7 +152,7 @@
 		DAC8FB8F2BAB40CB00398503 /* NewTaskInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskInput.swift; sourceTree = "<group>"; };
 		DAC8FB932BAB474B00398503 /* ProjectStatsBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStatsBoard.swift; sourceTree = "<group>"; };
 		DAC8FB982BAB49D500398503 /* ProjectStatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStatCard.swift; sourceTree = "<group>"; };
-		DAC8FB9C2BAB4A1100398503 /* ProjectStatClickableCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStatClickableCard.swift; sourceTree = "<group>"; };
+		DAC8FB9C2BAB4A1100398503 /* ProjectStatClickableTimeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStatClickableTimeCard.swift; sourceTree = "<group>"; };
 		DAC8FBA02BAB4B1100398503 /* Manrope-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Light.ttf"; sourceTree = "<group>"; };
 		DAC8FBA42BB4577100398503 /* CustomTimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTimePicker.swift; sourceTree = "<group>"; };
 		DAC8FBA82BB4634600398503 /* CustomTimePickerField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTimePickerField.swift; sourceTree = "<group>"; };
@@ -255,6 +255,7 @@
 				DAC8FB972BAB49B800398503 /* ProjectStatsBoard */,
 				DAC8FB8F2BAB40CB00398503 /* NewTaskInput.swift */,
 				DAC8FBA82BB4634600398503 /* CustomTimePickerField.swift */,
+				DAC8FBA42BB4577100398503 /* CustomTimePicker.swift */,
 				DAA2BDB42BA9E21F00017EC3 /* TaskCard.swift */,
 				DA1676C12B961291003DC9CD /* ProjectCard.swift */,
 			);
@@ -298,7 +299,6 @@
 				DA1676CA2B98BDDB003DC9CD /* BlurScroll.swift */,
 				DA5888B12B99FE82007BA4B0 /* CustomSheet.swift */,
 				DA5888B32B9A020C007BA4B0 /* CornerRadius.swift */,
-				DAC8FBA42BB4577100398503 /* CustomTimePicker.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -336,7 +336,7 @@
 			children = (
 				DAC8FB932BAB474B00398503 /* ProjectStatsBoard.swift */,
 				DAC8FB982BAB49D500398503 /* ProjectStatCard.swift */,
-				DAC8FB9C2BAB4A1100398503 /* ProjectStatClickableCard.swift */,
+				DAC8FB9C2BAB4A1100398503 /* ProjectStatClickableTimeCard.swift */,
 			);
 			path = ProjectStatsBoard;
 			sourceTree = "<group>";
@@ -486,7 +486,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAC8FB9D2BAB4A1100398503 /* ProjectStatClickableCard.swift in Sources */,
+				DAC8FB9D2BAB4A1100398503 /* ProjectStatClickableTimeCard.swift in Sources */,
 				DAA2BD9B2BA3039400017EC3 /* ProjectModel.swift in Sources */,
 				DAC8FB8C2BAB232800398503 /* TagsCollectionView.swift in Sources */,
 				DA5888B22B99FE82007BA4B0 /* CustomSheet.swift in Sources */,
@@ -519,7 +519,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAC8FB9E2BAB4A1100398503 /* ProjectStatClickableCard.swift in Sources */,
+				DAC8FB9E2BAB4A1100398503 /* ProjectStatClickableTimeCard.swift in Sources */,
 				DAA2BD8B2B9F478000017EC3 /* Fonts.swift in Sources */,
 				DAC8FBAA2BB4634700398503 /* CustomTimePickerField.swift in Sources */,
 				DAA2BD932B9F4B6F00017EC3 /* ProjectCreationSheet.swift in Sources */,
@@ -564,7 +564,7 @@
 				DA1676C02B9601F3003DC9CD /* Text.swift in Sources */,
 				DAA2BDBF2BA9E81500017EC3 /* LabelModel.swift in Sources */,
 				DA1676BC2B95FFB9003DC9CD /* Homepage.swift in Sources */,
-				DAC8FB9F2BAB4A1100398503 /* ProjectStatClickableCard.swift in Sources */,
+				DAC8FB9F2BAB4A1100398503 /* ProjectStatClickableTimeCard.swift in Sources */,
 				DAA2BD9D2BA3039400017EC3 /* ProjectModel.swift in Sources */,
 				DAC8FBAB2BB4634700398503 /* CustomTimePickerField.swift in Sources */,
 				DA1676C42B961291003DC9CD /* ProjectCard.swift in Sources */,
