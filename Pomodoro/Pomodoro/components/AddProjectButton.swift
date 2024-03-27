@@ -11,7 +11,6 @@ struct AddProjectButton: View, ProjectCreationSheetDelegate {
     @State private var showingSheet = false
     @State var shouldOpenProject: Bool = false
     @EnvironmentObject var store: ProjectStorage
-//    @State private var newProject: ProjectModel?
     @State private var newProject = ProjectModel(name: "temporary")
 
     var body: some View {
