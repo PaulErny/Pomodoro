@@ -39,8 +39,8 @@ struct TagsCollectionView<V: View>: View {
     
     @State private var datas: [ViewDatas] = []
     @State private var totalHeight
-        //= CGFloat.zero       // << variant for ScrollView/List
-        = CGFloat.infinity   // << variant for VStack
+        = CGFloat.zero       // << variant for ScrollView/List
+        //= CGFloat.infinity   // << variant for VStack
 
     init(tags: [LabelModel], @ViewBuilder _ leadingView: () -> V?) {
         self.leadingView = leadingView()
@@ -54,8 +54,8 @@ struct TagsCollectionView<V: View>: View {
                 self.generateContent(in: geometry)
             }
         }
-//        .frame(height: totalHeight)// << variant for ScrollView/List
-        .frame(maxHeight: totalHeight) // << variant for VStack
+        .frame(height: totalHeight)// << variant for ScrollView/List
+//        .frame(maxHeight: totalHeight) // << variant for VStack
         .onAppear {
             self.datas = {
                 var result: [ViewDatas] = []

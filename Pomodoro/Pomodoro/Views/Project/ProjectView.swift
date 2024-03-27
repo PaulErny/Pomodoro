@@ -24,25 +24,21 @@ struct ProjectView: View {
                 .frame(height: 180)
                 .padding([.leading, .trailing], 7)
                 .padding(.top, 10)
+
+            NewTaskInput(onComplete: { taskName in
+                withAnimation {
+                    project.tasks.append(TaskModel(name: taskName))
+                }
+            })
             
-            // task creation
-            RoundedRectangle(cornerRadius: 7)
-                .fill(Color.cardBackground)
-                .frame(height: 44)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 7)
-                        .fill(
-                            .shadow(.inner(color: .black.opacity(0.15), radius: 4 ))
-                        )
-                        .padding(2)
-                        .foregroundStyle(Color.inputBackground)
-                    
-                )
-                .padding([.leading, .trailing], 7)
-            
-            ForEach(project.tasks, id: \.id) { task in
-                TaskCard(task: task)
+            ScrollView {
+                LazyVStack {
+                    ForEach(project.tasks, id: \.id) { task in
+                        TaskCard(task: task)
+                    }
+                }
             }
+            .scrollIndicators(.hidden)
 
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
