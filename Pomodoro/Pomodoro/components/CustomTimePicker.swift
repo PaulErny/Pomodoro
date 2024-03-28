@@ -17,17 +17,6 @@ struct CustomTimePicker: View {
     var body: some View {
         GeometryReader { geometry in
             HStack(spacing: 0) {
-//                ForEach(0..<data.count, id: \.self) { column in
-//                    Picker(data[column].0, selection: $selection[column]) {
-//                        ForEach(0..<data[column].1.count, id: \.self) { row in
-//                            Text(formatTime(data[column].1[row]))
-//                            .tag(formatTime(data[column].1[row]))
-//                        }
-//                    }
-//                    .pickerStyle(WheelPickerStyle())
-//                    .frame(width: geometry.size.width / CGFloat(self.data.count), height: geometry.size.height)
-//                    .clipped()
-//                }
                 Picker("Hours", selection: $selection.hours) {
                     ForEach(0...23, id: \.self) { hours in
                         Text(formatTime(hours))

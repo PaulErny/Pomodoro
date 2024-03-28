@@ -96,6 +96,9 @@
 		DAC8FBA92BB4634700398503 /* CustomTimePickerField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FBA82BB4634600398503 /* CustomTimePickerField.swift */; };
 		DAC8FBAA2BB4634700398503 /* CustomTimePickerField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FBA82BB4634600398503 /* CustomTimePickerField.swift */; };
 		DAC8FBAB2BB4634700398503 /* CustomTimePickerField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FBA82BB4634600398503 /* CustomTimePickerField.swift */; };
+		DAC8FBAD2BB5860900398503 /* IntPickerField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FBAC2BB5860900398503 /* IntPickerField.swift */; };
+		DAC8FBAE2BB5860900398503 /* IntPickerField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FBAC2BB5860900398503 /* IntPickerField.swift */; };
+		DAC8FBAF2BB5860900398503 /* IntPickerField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FBAC2BB5860900398503 /* IntPickerField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +159,7 @@
 		DAC8FBA02BAB4B1100398503 /* Manrope-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Light.ttf"; sourceTree = "<group>"; };
 		DAC8FBA42BB4577100398503 /* CustomTimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTimePicker.swift; sourceTree = "<group>"; };
 		DAC8FBA82BB4634600398503 /* CustomTimePickerField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTimePickerField.swift; sourceTree = "<group>"; };
+		DAC8FBAC2BB5860900398503 /* IntPickerField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntPickerField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +259,7 @@
 				DAC8FB972BAB49B800398503 /* ProjectStatsBoard */,
 				DAC8FB8F2BAB40CB00398503 /* NewTaskInput.swift */,
 				DAC8FBA82BB4634600398503 /* CustomTimePickerField.swift */,
+				DAC8FBAC2BB5860900398503 /* IntPickerField.swift */,
 				DAC8FBA42BB4577100398503 /* CustomTimePicker.swift */,
 				DAA2BDB42BA9E21F00017EC3 /* TaskCard.swift */,
 				DA1676C12B961291003DC9CD /* ProjectCard.swift */,
@@ -490,6 +495,7 @@
 				DAA2BD9B2BA3039400017EC3 /* ProjectModel.swift in Sources */,
 				DAC8FB8C2BAB232800398503 /* TagsCollectionView.swift in Sources */,
 				DA5888B22B99FE82007BA4B0 /* CustomSheet.swift in Sources */,
+				DAC8FBAD2BB5860900398503 /* IntPickerField.swift in Sources */,
 				DAA2BDB52BA9E21F00017EC3 /* TaskCard.swift in Sources */,
 				DAC8FB902BAB40CB00398503 /* NewTaskInput.swift in Sources */,
 				DA16769C2B95D8B5003DC9CD /* Fonts.swift in Sources */,
@@ -536,6 +542,7 @@
 				DAC8FB912BAB40CB00398503 /* NewTaskInput.swift in Sources */,
 				DA1676BF2B9601F3003DC9CD /* Text.swift in Sources */,
 				DA1676BB2B95FFB9003DC9CD /* Homepage.swift in Sources */,
+				DAC8FBAE2BB5860900398503 /* IntPickerField.swift in Sources */,
 				DAA2BDBE2BA9E81500017EC3 /* LabelModel.swift in Sources */,
 				DAA2BDBA2BA9E77000017EC3 /* TaskModel.swift in Sources */,
 				DAA2BDA02BA304B300017EC3 /* ProjectStorage.swift in Sources */,
@@ -572,6 +579,7 @@
 				DAC8FBA72BB4577100398503 /* CustomTimePicker.swift in Sources */,
 				DAA2BDB72BA9E21F00017EC3 /* TaskCard.swift in Sources */,
 				DAC8FB8E2BAB232900398503 /* TagsCollectionView.swift in Sources */,
+				DAC8FBAF2BB5860900398503 /* IntPickerField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
