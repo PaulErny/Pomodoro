@@ -11,7 +11,6 @@ struct AddProjectButton: View, ProjectCreationSheetDelegate {
     @State private var showingSheet = false
     @State var shouldOpenProject: Bool = false
     @EnvironmentObject var store: ProjectStorage
-//    @State private var newProject = ProjectModel(name: "temporary")
 
     var body: some View {
         return Button {
@@ -35,13 +34,11 @@ struct AddProjectButton: View, ProjectCreationSheetDelegate {
         }
         .navigationDestination(isPresented: $shouldOpenProject, destination: {
             ProjectView(project: $store.projects.last)
-//            ProjectView(project: $newProject)
         })
     }
     
     func onComplete(projectName: String) {
         let newProject = ProjectModel(name: projectName)
-//        self.newProject = newProject
         store.projects.append(newProject)
         shouldOpenProject = true
     }

@@ -11,12 +11,6 @@ struct ProjectView: View {
     @Environment(\.dismiss) private var dismiss
     @EnvironmentObject var store: ProjectStorage
     @Binding var project: ProjectModel
-//    @Binding var projectId: UUID? {
-//        didSet {
-//            guard let projectBinding = $store.projects.first(where: { $0.id == projectId }) else { return }
-//            _project = projectBinding
-//        }
-//    }
     
     init(project: Binding<ProjectModel>) {
         self._project = project
@@ -72,26 +66,10 @@ struct ProjectView: View {
                 }
             }
         }
-//        .onAppear {
-//            if projectId != nil {
-//                guard let projectBinding = $store.projects.first(where: { $0.id == projectId }) else { return }
-//                project = projectBinding
-//            }
-//        }
         .toolbarBackground(.visible, for: .navigationBar)
         .toolbarBackground(Color.cardBackground, for: .navigationBar)
     }
 }
-
-//struct ProjectView_Previews: PreviewProvider {
-//    @State var project = ProjectModel.fullDebugProject
-//
-//    static var previews: some View {
-//        NavigationStack {
-//            ProjectView(project: project)
-//        }
-//    }
-//}
 
 #Preview {
     @State var project = ProjectModel.fullDebugProject

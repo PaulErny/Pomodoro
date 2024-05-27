@@ -7,7 +7,11 @@
 
 import Foundation
 
-struct Time: Codable, Equatable, Hashable {
+struct Time: Codable, Equatable {
+    static func == (lhs: Time, rhs: Time) -> Bool {
+        lhs.hours == rhs.hours && lhs.minutes == rhs.minutes
+    }
+    
     var hours: Int
     var minutes: Int
     
@@ -21,9 +25,16 @@ struct Time: Codable, Equatable, Hashable {
     }
 }
 
-struct ProjectModel: Identifiable, Codable, Equatable, Hashable {
+struct ProjectModel: Identifiable, Codable, Equatable {
+    
     static func == (lhs: ProjectModel, rhs: ProjectModel) -> Bool {
-        lhs.id == rhs.id
+        return lhs.id == rhs.id &&
+        lhs.name == rhs.name &&
+        lhs.pomodoroLength == rhs.pomodoroLength &&
+        lhs.pomodorosBeforeBreak == rhs.pomodorosBeforeBreak &&
+        lhs.smallBreakLength == rhs.smallBreakLength &&
+        lhs.longBreakLength == rhs.longBreakLength &&
+        lhs.tasks == rhs.tasks
     }
     
     var id: UUID

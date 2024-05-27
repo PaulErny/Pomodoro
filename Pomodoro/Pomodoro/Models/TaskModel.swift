@@ -7,7 +7,17 @@
 
 import Foundation
 
-struct TaskModel: Identifiable, Codable, Equatable, Hashable {
+struct TaskModel: Identifiable, Codable, Equatable {
+    static func == (lhs: TaskModel, rhs: TaskModel) -> Bool {
+        return (
+            lhs.id == rhs.id &&
+            lhs.name == rhs.name &&
+            lhs.length == rhs.length &&
+            lhs.isComplete == rhs.isComplete &&
+            lhs.labels == rhs.labels
+        )
+    }
+    
     var id: UUID
     var name: String
     var length: Int // number of pomodoros
