@@ -27,17 +27,11 @@
 		DA1676B42B95E1F1003DC9CD /* Silkscreen-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA1676B32B95E1F1003DC9CD /* Silkscreen-Regular.ttf */; };
 		DA1676B72B95E4D7003DC9CD /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676B62B95E4D7003DC9CD /* Colors.swift */; };
 		DA1676BA2B95FFB9003DC9CD /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676B92B95FFB9003DC9CD /* Homepage.swift */; };
-		DA1676BB2B95FFB9003DC9CD /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676B92B95FFB9003DC9CD /* Homepage.swift */; };
-		DA1676BC2B95FFB9003DC9CD /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676B92B95FFB9003DC9CD /* Homepage.swift */; };
 		DA1676BE2B9601F3003DC9CD /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676BD2B9601F3003DC9CD /* Text.swift */; };
 		DA1676BF2B9601F3003DC9CD /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676BD2B9601F3003DC9CD /* Text.swift */; };
 		DA1676C02B9601F3003DC9CD /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676BD2B9601F3003DC9CD /* Text.swift */; };
 		DA1676C22B961291003DC9CD /* ProjectCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676C12B961291003DC9CD /* ProjectCard.swift */; };
-		DA1676C32B961291003DC9CD /* ProjectCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676C12B961291003DC9CD /* ProjectCard.swift */; };
-		DA1676C42B961291003DC9CD /* ProjectCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676C12B961291003DC9CD /* ProjectCard.swift */; };
 		DA1676C62B98B859003DC9CD /* AddProjectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676C52B98B858003DC9CD /* AddProjectButton.swift */; };
-		DA1676C72B98B859003DC9CD /* AddProjectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676C52B98B858003DC9CD /* AddProjectButton.swift */; };
-		DA1676C82B98B859003DC9CD /* AddProjectButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676C52B98B858003DC9CD /* AddProjectButton.swift */; };
 		DA1676CB2B98BDDB003DC9CD /* BlurScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676CA2B98BDDB003DC9CD /* BlurScroll.swift */; };
 		DA1676CC2B98BDDB003DC9CD /* BlurScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676CA2B98BDDB003DC9CD /* BlurScroll.swift */; };
 		DA1676CD2B98BDDB003DC9CD /* BlurScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676CA2B98BDDB003DC9CD /* BlurScroll.swift */; };
@@ -60,11 +54,7 @@
 		DAA2BDA02BA304B300017EC3 /* ProjectStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BD9E2BA304B300017EC3 /* ProjectStorage.swift */; };
 		DAA2BDA12BA304B300017EC3 /* ProjectStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BD9E2BA304B300017EC3 /* ProjectStorage.swift */; };
 		DAA2BDB12BA4A56E00017EC3 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BDB02BA4A56E00017EC3 /* ProjectView.swift */; };
-		DAA2BDB22BA4A56E00017EC3 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BDB02BA4A56E00017EC3 /* ProjectView.swift */; };
-		DAA2BDB32BA4A56E00017EC3 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BDB02BA4A56E00017EC3 /* ProjectView.swift */; };
 		DAA2BDB52BA9E21F00017EC3 /* TaskCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BDB42BA9E21F00017EC3 /* TaskCard.swift */; };
-		DAA2BDB62BA9E21F00017EC3 /* TaskCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BDB42BA9E21F00017EC3 /* TaskCard.swift */; };
-		DAA2BDB72BA9E21F00017EC3 /* TaskCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BDB42BA9E21F00017EC3 /* TaskCard.swift */; };
 		DAA2BDB92BA9E76F00017EC3 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BDB82BA9E76F00017EC3 /* TaskModel.swift */; };
 		DAA2BDBA2BA9E77000017EC3 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BDB82BA9E76F00017EC3 /* TaskModel.swift */; };
 		DAA2BDBB2BA9E77000017EC3 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BDB82BA9E76F00017EC3 /* TaskModel.swift */; };
@@ -73,8 +63,6 @@
 		DAA2BDBF2BA9E81500017EC3 /* LabelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA2BDBC2BA9E81500017EC3 /* LabelModel.swift */; };
 		DAC8FB8A2BAAE10700398503 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676B62B95E4D7003DC9CD /* Colors.swift */; };
 		DAC8FB8C2BAB232800398503 /* TagsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB8B2BAB232800398503 /* TagsCollectionView.swift */; };
-		DAC8FB8D2BAB232900398503 /* TagsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB8B2BAB232800398503 /* TagsCollectionView.swift */; };
-		DAC8FB8E2BAB232900398503 /* TagsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB8B2BAB232800398503 /* TagsCollectionView.swift */; };
 		DAC8FB902BAB40CB00398503 /* NewTaskInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB8F2BAB40CB00398503 /* NewTaskInput.swift */; };
 		DAC8FB912BAB40CB00398503 /* NewTaskInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB8F2BAB40CB00398503 /* NewTaskInput.swift */; };
 		DAC8FB922BAB40CB00398503 /* NewTaskInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB8F2BAB40CB00398503 /* NewTaskInput.swift */; };
@@ -102,6 +90,10 @@
 		DAC8FBB52BB71D9A00398503 /* ProjectStatIntCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FBB42BB71D9A00398503 /* ProjectStatIntCard.swift */; };
 		DAC8FBB62BB71D9A00398503 /* ProjectStatIntCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FBB42BB71D9A00398503 /* ProjectStatIntCard.swift */; };
 		DAC8FBB72BB71D9A00398503 /* ProjectStatIntCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FBB42BB71D9A00398503 /* ProjectStatIntCard.swift */; };
+		DAE04D272C04D05700E7FB52 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE04D262C04D05700E7FB52 /* TaskView.swift */; };
+		DAE04D292C04D2E600E7FB52 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE04D282C04D2E600E7FB52 /* Tag.swift */; };
+		DAE04D2B2C04D44A00E7FB52 /* NewTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE04D2A2C04D44A00E7FB52 /* NewTag.swift */; };
+		DAE04D2E2C04D7B900E7FB52 /* TagAncestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE04D2D2C04D7B900E7FB52 /* TagAncestor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +156,10 @@
 		DAC8FBA82BB4634600398503 /* CustomTimePickerField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTimePickerField.swift; sourceTree = "<group>"; };
 		DAC8FBAC2BB5860900398503 /* IntPickerField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntPickerField.swift; sourceTree = "<group>"; };
 		DAC8FBB42BB71D9A00398503 /* ProjectStatIntCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStatIntCard.swift; sourceTree = "<group>"; };
+		DAE04D262C04D05700E7FB52 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		DAE04D282C04D2E600E7FB52 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		DAE04D2A2C04D44A00E7FB52 /* NewTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTag.swift; sourceTree = "<group>"; };
+		DAE04D2D2C04D7B900E7FB52 /* TagAncestor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagAncestor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +256,7 @@
 				DAA2BD912B9F4B6F00017EC3 /* ProjectCreationSheet.swift */,
 				DAA2BD952BA061CE00017EC3 /* Sheet.swift */,
 				DAC8FB8B2BAB232800398503 /* TagsCollectionView.swift */,
+				DAE04D2C2C04D6FD00E7FB52 /* Tags */,
 				DAC8FB972BAB49B800398503 /* ProjectStatsBoard */,
 				DAC8FB8F2BAB40CB00398503 /* NewTaskInput.swift */,
 				DAC8FBA82BB4634600398503 /* CustomTimePickerField.swift */,
@@ -334,6 +331,7 @@
 		DAA2BDAF2BA4A51E00017EC3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DAE04D252C04D03E00E7FB52 /* Task */,
 				DAA2BDAE2BA4A50B00017EC3 /* Project */,
 				DA1676B82B95FF7C003DC9CD /* homepage */,
 			);
@@ -349,6 +347,24 @@
 				DAC8FB9C2BAB4A1100398503 /* ProjectStatClickableTimeCard.swift */,
 			);
 			path = ProjectStatsBoard;
+			sourceTree = "<group>";
+		};
+		DAE04D252C04D03E00E7FB52 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				DAE04D262C04D05700E7FB52 /* TaskView.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		DAE04D2C2C04D6FD00E7FB52 /* Tags */ = {
+			isa = PBXGroup;
+			children = (
+				DAE04D282C04D2E600E7FB52 /* Tag.swift */,
+				DAE04D2A2C04D44A00E7FB52 /* NewTag.swift */,
+				DAE04D2D2C04D7B900E7FB52 /* TagAncestor.swift */,
+			);
+			path = Tags;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -500,14 +516,17 @@
 				DAA2BD9B2BA3039400017EC3 /* ProjectModel.swift in Sources */,
 				DAC8FB8C2BAB232800398503 /* TagsCollectionView.swift in Sources */,
 				DA5888B22B99FE82007BA4B0 /* CustomSheet.swift in Sources */,
+				DAE04D2B2C04D44A00E7FB52 /* NewTag.swift in Sources */,
 				DAC8FBAD2BB5860900398503 /* IntPickerField.swift in Sources */,
 				DAA2BDB52BA9E21F00017EC3 /* TaskCard.swift in Sources */,
+				DAE04D2E2C04D7B900E7FB52 /* TagAncestor.swift in Sources */,
 				DAC8FB902BAB40CB00398503 /* NewTaskInput.swift in Sources */,
 				DA16769C2B95D8B5003DC9CD /* Fonts.swift in Sources */,
 				DA1676CB2B98BDDB003DC9CD /* BlurScroll.swift in Sources */,
 				DA1676B72B95E4D7003DC9CD /* Colors.swift in Sources */,
 				DA11ED022B91D7DD0044CD17 /* ContentView.swift in Sources */,
 				DAC8FB992BAB49D500398503 /* ProjectStatTimerCard.swift in Sources */,
+				DAE04D292C04D2E600E7FB52 /* Tag.swift in Sources */,
 				DA1676BA2B95FFB9003DC9CD /* Homepage.swift in Sources */,
 				DAC8FBA52BB4577100398503 /* CustomTimePicker.swift in Sources */,
 				DA5888B42B9A020C007BA4B0 /* CornerRadius.swift in Sources */,
@@ -517,6 +536,7 @@
 				DA1676BE2B9601F3003DC9CD /* Text.swift in Sources */,
 				DAC8FBB52BB71D9A00398503 /* ProjectStatIntCard.swift in Sources */,
 				DAC8FB942BAB474B00398503 /* ProjectStatsBoard.swift in Sources */,
+				DAE04D272C04D05700E7FB52 /* TaskView.swift in Sources */,
 				DAA2BDB92BA9E76F00017EC3 /* TaskModel.swift in Sources */,
 				DAA2BD9F2BA304B300017EC3 /* ProjectStorage.swift in Sources */,
 				DAA2BD962BA061CE00017EC3 /* Sheet.swift in Sources */,
@@ -540,20 +560,14 @@
 				DAC8FB952BAB474B00398503 /* ProjectStatsBoard.swift in Sources */,
 				DA1676CC2B98BDDB003DC9CD /* BlurScroll.swift in Sources */,
 				DAA2BD972BA061CE00017EC3 /* Sheet.swift in Sources */,
-				DA1676C32B961291003DC9CD /* ProjectCard.swift in Sources */,
-				DAA2BDB62BA9E21F00017EC3 /* TaskCard.swift in Sources */,
 				DAC8FB9A2BAB49D500398503 /* ProjectStatTimerCard.swift in Sources */,
-				DA1676C72B98B859003DC9CD /* AddProjectButton.swift in Sources */,
-				DAC8FB8D2BAB232900398503 /* TagsCollectionView.swift in Sources */,
 				DAC8FB912BAB40CB00398503 /* NewTaskInput.swift in Sources */,
 				DA1676BF2B9601F3003DC9CD /* Text.swift in Sources */,
-				DA1676BB2B95FFB9003DC9CD /* Homepage.swift in Sources */,
 				DAC8FBAE2BB5860900398503 /* IntPickerField.swift in Sources */,
 				DAA2BDBE2BA9E81500017EC3 /* LabelModel.swift in Sources */,
 				DAC8FBB62BB71D9A00398503 /* ProjectStatIntCard.swift in Sources */,
 				DAA2BDBA2BA9E77000017EC3 /* TaskModel.swift in Sources */,
 				DAA2BDA02BA304B300017EC3 /* ProjectStorage.swift in Sources */,
-				DAA2BDB22BA4A56E00017EC3 /* ProjectView.swift in Sources */,
 				DAC8FBA62BB4577100398503 /* CustomTimePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -567,26 +581,20 @@
 				DA11ED1D2B91D7DF0044CD17 /* PomodoroUITestsLaunchTests.swift in Sources */,
 				DAC8FB922BAB40CB00398503 /* NewTaskInput.swift in Sources */,
 				DAC8FB8A2BAAE10700398503 /* Colors.swift in Sources */,
-				DAA2BDB32BA4A56E00017EC3 /* ProjectView.swift in Sources */,
 				DA1676CD2B98BDDB003DC9CD /* BlurScroll.swift in Sources */,
 				DAC8FB9B2BAB49D500398503 /* ProjectStatTimerCard.swift in Sources */,
 				DAA2BDA12BA304B300017EC3 /* ProjectStorage.swift in Sources */,
 				DAC8FB962BAB474B00398503 /* ProjectStatsBoard.swift in Sources */,
-				DA1676C82B98B859003DC9CD /* AddProjectButton.swift in Sources */,
 				DAA2BD982BA061CE00017EC3 /* Sheet.swift in Sources */,
 				DA11ED1B2B91D7DF0044CD17 /* PomodoroUITests.swift in Sources */,
 				DA1676C02B9601F3003DC9CD /* Text.swift in Sources */,
 				DAA2BDBF2BA9E81500017EC3 /* LabelModel.swift in Sources */,
-				DA1676BC2B95FFB9003DC9CD /* Homepage.swift in Sources */,
 				DAC8FB9F2BAB4A1100398503 /* ProjectStatClickableTimeCard.swift in Sources */,
 				DAC8FBB72BB71D9A00398503 /* ProjectStatIntCard.swift in Sources */,
 				DAA2BD9D2BA3039400017EC3 /* ProjectModel.swift in Sources */,
 				DAC8FBAB2BB4634700398503 /* CustomTimePickerField.swift in Sources */,
-				DA1676C42B961291003DC9CD /* ProjectCard.swift in Sources */,
 				DAA2BDBB2BA9E77000017EC3 /* TaskModel.swift in Sources */,
 				DAC8FBA72BB4577100398503 /* CustomTimePicker.swift in Sources */,
-				DAA2BDB72BA9E21F00017EC3 /* TaskCard.swift in Sources */,
-				DAC8FB8E2BAB232900398503 /* TagsCollectionView.swift in Sources */,
 				DAC8FBAF2BB5860900398503 /* IntPickerField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

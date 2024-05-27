@@ -77,25 +77,6 @@ struct TagsCollectionView<V: View>: View {
         var height = CGFloat.zero
 
         return ZStack(alignment: .topLeading) {
-//            if leadingView != nil {
-//                leadingView
-//                    .alignmentGuide(.leading, computeValue: { d in
-//                        if (abs(width - d.width) > g.size.width)
-//                        {
-//                            width = 0
-//                            height -= d.height
-//                        }
-//                        print(width)
-//                        let result = width
-//                        width -= d.width
-//                        return result
-//                    })
-//                    .alignmentGuide(.top, computeValue: {d in
-//                        let result = height
-//                        return result
-//                    })
-//            }
-            
             ForEach(datas, id: \.self) { data in
                 switch data {
                 case .view(let view):
@@ -122,7 +103,7 @@ struct TagsCollectionView<V: View>: View {
                             return result
                         })
                 case .tag(let tag):
-                    self.item(for: tag)
+                    Tag(tag: tag)
                         .padding([.horizontal, .vertical], 4)
                         .alignmentGuide(.leading, computeValue: { d in
                             if (abs(width - d.width) > g.size.width)
@@ -146,42 +127,8 @@ struct TagsCollectionView<V: View>: View {
                             return result
                         })
                 }
-//                self.item(for: tag)
-//                    .padding([.horizontal, .vertical], 4)
-//                    .alignmentGuide(.leading, computeValue: { d in
-//                        if (abs(width - d.width) > g.size.width)
-//                        {
-//                            width = 0
-//                            height -= d.height
-//                        }
-//                        let result = width
-//                        if tag == self.tags.last! {
-//                            width = 0 //last item
-//                        } else {
-//                            width -= d.width
-//                        }
-//                        return result
-//                    })
-//                    .alignmentGuide(.top, computeValue: {d in
-//                        let result = height
-//                        if tag == self.tags.last! {
-//                            height = 0 // last item
-//                        }
-//                        return result
-//                    })
             }
         }.background(viewHeightReader($totalHeight))
-    }
-
-    private func item(for tag: LabelModel) -> some View {
-        Text(tag.name)
-            .frame(height: 14)
-            .padding([.leading, .trailing], 7)
-            .padding([.bottom, .top], 3)
-            .font(.body)// TODO: font
-            .background(tag.color)
-            .foregroundColor(Color.cardBackground)
-            .cornerRadius(10)
     }
 
     private func viewHeightReader(_ binding: Binding<CGFloat>) -> some View {
