@@ -22,8 +22,8 @@ struct PomodoroApp: App {
                             fatalError(error.localizedDescription)
                         }
                     }
-                    .environmentObject(store)
             }
+            .environmentObject(store)
         }
     }
 }

@@ -39,7 +39,7 @@ struct TaskCard: View {
             .background(
                 RoundedRectangle(cornerRadius: 7)
                     .fill(Color.cardBackground)
-                    .shadow(color: Color("testShadow"), radius: 0, x: -3, y: 4)
+                    .shadow(color: Color.cardShadow, radius: 0, x: -3, y: 4)
             )
             .padding([.leading, .trailing], 7)
         }

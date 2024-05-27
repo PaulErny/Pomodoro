@@ -12,7 +12,7 @@ struct CustomTimePicker: View {
         ("Hours", Array(0...23)),
         ("Minutes", Array(0...59))
     ]
-    @ObservedObject var selection: Time
+    @Binding var selection: Time
 
     var body: some View {
         GeometryReader { geometry in
@@ -46,11 +46,11 @@ struct CustomTimePicker: View {
 }
 
 struct CustomTimePicker_Previews: PreviewProvider {
-    @ObservedObject static var selection = Time(hours: 0, minutes: 0)
+    @State static var selection = Time(hours: 0, minutes: 0)
     
     static var previews: some View {
         VStack {
-            CustomTimePicker(selection: selection)
+            CustomTimePicker(selection: $selection)
                 .frame(width: 220, height: 220)
                 .background(Color.cardBackground.cornerRadius(10) )
                 .shadow(radius: 10)

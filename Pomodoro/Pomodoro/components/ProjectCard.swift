@@ -15,7 +15,8 @@ struct NoAnim: ButtonStyle {
 }
 
 struct ProjectCard: View {
-    let project: ProjectModel
+    @EnvironmentObject var store: ProjectStorage
+    @Binding var project: ProjectModel
     @State private var dragOffset = CGSize.zero
     private let cardHeight: CGFloat = 66
     @State private var isRemoved = false
@@ -50,7 +51,7 @@ struct ProjectCard: View {
                         }
                 }
             
-                NavigationLink(destination: ProjectView(project: project)) {
+                NavigationLink(destination: ProjectView(project: $project)) {
                     HStack {
                         VStack(alignment: .leading, spacing: 0) {
                             Text(project.name)
@@ -84,7 +85,7 @@ struct ProjectCard: View {
                     .background {
                         RoundedRectangle(cornerRadius: 7)
                             .fill(Color.cardBackground)
-                            .shadow(color: Color("testShadow"), radius: 0, x: -3, y: 4)
+                            .shadow(color: Color.cardShadow, radius: 0, x: -3, y: 4)
                             .frame(height: cardHeight)
                     }
                     .offset(dragOffset)
@@ -131,7 +132,7 @@ struct ProjectCard_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
             Spacer()
-            ProjectCard(project: project)
+            ProjectCard(project: $project)
             Spacer()
         }
             .background(Color.background)

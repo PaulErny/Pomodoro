@@ -11,10 +11,10 @@ struct AddProjectButton: View, ProjectCreationSheetDelegate {
     @State private var showingSheet = false
     @State var shouldOpenProject: Bool = false
     @EnvironmentObject var store: ProjectStorage
-    @State private var newProject = ProjectModel(name: "temporary")
+//    @State private var newProject = ProjectModel(name: "temporary")
 
     var body: some View {
-        Button {
+        return Button {
             showingSheet.toggle()
         } label: {
             RoundedRectangle(cornerRadius: 20)
@@ -33,13 +33,16 @@ struct AddProjectButton: View, ProjectCreationSheetDelegate {
                 .menuIndicator(.visible)
                 .presentationDragIndicator(.visible)
         }
-        .navigationDestination(isPresented: $shouldOpenProject, destination: { ProjectView(project: newProject) })
+        .navigationDestination(isPresented: $shouldOpenProject, destination: {
+            ProjectView(project: $store.projects.last)
+//            ProjectView(project: $newProject)
+        })
     }
     
     func onComplete(projectName: String) {
         let newProject = ProjectModel(name: projectName)
+//        self.newProject = newProject
         store.projects.append(newProject)
-        self.newProject = newProject
         shouldOpenProject = true
     }
 }

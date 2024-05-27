@@ -10,27 +10,39 @@ import SwiftUI
 struct ProjectView: View {
     @Environment(\.dismiss) private var dismiss
     @EnvironmentObject var store: ProjectStorage
-    @State var project: ProjectModel
+    @Binding var project: ProjectModel
+//    @Binding var projectId: UUID? {
+//        didSet {
+//            guard let projectBinding = $store.projects.first(where: { $0.id == projectId }) else { return }
+//            _project = projectBinding
+//        }
+//    }
     
-    init(project: ProjectModel) {
-        self.project = project
+    init(project: Binding<ProjectModel>) {
+        self._project = project
+    }
+    
+    init(project: Binding<ProjectModel>?) {
+        guard let project = project else {
+            self._project = Binding.constant(ProjectModel(name: ""))
+            return
+        }
+        self._project = project
     }
 
     var body: some View {
-        VStack(spacing: 10) {
+        return VStack(spacing: 5) {
             //  stats
-            RoundedRectangle(cornerRadius: 7)
-                .fill(Color.cardBackground)
-                .frame(height: 180)
-                .padding([.leading, .trailing], 7)
+            ProjectStatsBoard(project: $project)
                 .padding(.top, 10)
+                .padding(.bottom, 5)
 
             NewTaskInput(onComplete: { taskName in
                 withAnimation {
                     project.tasks.append(TaskModel(name: taskName))
                 }
             })
-            
+            .padding(.bottom, 5)
             ScrollView {
                 LazyVStack {
                     ForEach(project.tasks, id: \.id) { task in
@@ -60,17 +72,33 @@ struct ProjectView: View {
                 }
             }
         }
+//        .onAppear {
+//            if projectId != nil {
+//                guard let projectBinding = $store.projects.first(where: { $0.id == projectId }) else { return }
+//                project = projectBinding
+//            }
+//        }
         .toolbarBackground(.visible, for: .navigationBar)
         .toolbarBackground(Color.cardBackground, for: .navigationBar)
     }
 }
 
-struct ProjectView_Previews: PreviewProvider {
-    static let project = ProjectModel.debugProject
+//struct ProjectView_Previews: PreviewProvider {
+//    @State var project = ProjectModel.fullDebugProject
+//
+//    static var previews: some View {
+//        NavigationStack {
+//            ProjectView(project: project)
+//        }
+//    }
+//}
 
-    static var previews: some View {
+#Preview {
+    @State var project = ProjectModel.fullDebugProject
+    
+    return VStack {
         NavigationStack {
-            ProjectView(project: project)
+            ProjectView(project: $project)
         }
     }
 }

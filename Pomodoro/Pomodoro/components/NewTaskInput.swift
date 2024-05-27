@@ -16,7 +16,8 @@ struct NewTaskInput: View {
         TextField("Task name", text: $taskName, prompt: Text("Ajouter une tâche").font(.labelFont).foregroundColor(.label))
             .font(.labelFont) //tmp
             .foregroundColor(.label) //tmp
-            .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .frame(height: 44)
             .padding(.leading, 45)
             .background(
                 RoundedRectangle(cornerRadius: 7)
@@ -24,7 +25,7 @@ struct NewTaskInput: View {
                     .overlay(
                         RoundedRectangle(cornerRadius: 7)
                             .fill(
-                                .shadow(.inner(color: .black.opacity(0.15), radius: 4 ))
+                                .shadow(.inner(color: .black.opacity(0.12), radius: 4 ))
                             )
                             .padding(2)
                             .foregroundStyle(isContentValid ? Color.inputBackground : .red) // TODO: changer .red

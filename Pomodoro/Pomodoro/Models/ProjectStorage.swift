@@ -55,4 +55,8 @@ class ProjectStorage: ObservableObject {
         }
         _ = try await task.value
     }
+    
+//    func saveTest(for projectId: UUID, value: Int) {
+//        self.projects.first(where: {$0.id == projectId})?.pomodorosBeforeBreak = value
+//    }
 }

@@ -7,22 +7,8 @@
 
 import SwiftUI
 
-class Time: ObservableObject {
-    @Published var hours: Int
-    @Published var minutes: Int
-    
-    var inMinutes: Int {
-        hours * 60 + minutes
-    }
-    
-    init(hours: Int, minutes: Int) {
-        self.hours = hours
-        self.minutes = minutes
-    }
-}
-
 struct CustomTimePickerField: View {
-    @ObservedObject var time: Time
+    @Binding var time: Time
     @State var isShowingPicker: Bool = false
     
     var body: some View {
@@ -37,7 +23,7 @@ struct CustomTimePickerField: View {
                 .shadow(color: Color.statCardShadow, radius: 0, x: -1, y: 2)
         }
         .popover(isPresented: $isShowingPicker) {
-            CustomTimePicker(selection: time)
+            CustomTimePicker(selection: $time)
                 .frame(width: 220, height: 220)
                 .background(Color.cardBackground.cornerRadius(10) )
                 .shadow(radius: 10)
@@ -53,7 +39,7 @@ struct CustomTimePickerField: View {
 }
 
 #Preview {
-    @ObservedObject var time = Time(hours: 1, minutes: 45)
+    @State var time = Time(hours: 1, minutes: 45)
     
-    return CustomTimePickerField(time: time)
+    return CustomTimePickerField(time: $time)
 }

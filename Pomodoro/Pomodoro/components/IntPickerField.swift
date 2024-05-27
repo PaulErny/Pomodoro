@@ -10,6 +10,7 @@ import SwiftUI
 struct IntPickerField: View {
     @Binding var value: Int
     var range = 1...10
+    var onComplete: ((Int) -> Void)?
     @State var isShowingPicker: Bool = false
     
     var body: some View {
@@ -30,12 +31,15 @@ struct IntPickerField: View {
                     .tag(value)
                 }
             }
+            .onSubmit {
+                onComplete?(value)
+            }
             .pickerStyle(WheelPickerStyle())
             .clipped()
-                .frame(width: 220, height: 220)
-                .background(Color.cardBackground.cornerRadius(10) )
-                .shadow(radius: 10)
-                .presentationCompactAdaptation(.popover)
+            .frame(width: 220, height: 220)
+            .background(Color.cardBackground.cornerRadius(10) )
+            .shadow(radius: 10)
+            .presentationCompactAdaptation(.popover)
         }
     }
 }

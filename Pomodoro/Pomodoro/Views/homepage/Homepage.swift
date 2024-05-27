@@ -19,8 +19,8 @@ struct Homepage: View {
 //                            }
 //                        }
 //                    }
-             ForEach(store.projects, id: \.id) { project in
-                 ProjectCard(project: project) {
+            ForEach(Array(store.projects.enumerated()), id: \.element.id) { (index, project) in
+                ProjectCard(project: $store.projects[index]) {
                     withAnimation {
                         removeProject(id: project.id)
                     }

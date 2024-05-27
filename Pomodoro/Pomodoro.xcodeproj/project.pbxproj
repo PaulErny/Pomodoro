@@ -81,9 +81,9 @@
 		DAC8FB942BAB474B00398503 /* ProjectStatsBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB932BAB474B00398503 /* ProjectStatsBoard.swift */; };
 		DAC8FB952BAB474B00398503 /* ProjectStatsBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB932BAB474B00398503 /* ProjectStatsBoard.swift */; };
 		DAC8FB962BAB474B00398503 /* ProjectStatsBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB932BAB474B00398503 /* ProjectStatsBoard.swift */; };
-		DAC8FB992BAB49D500398503 /* ProjectStatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB982BAB49D500398503 /* ProjectStatCard.swift */; };
-		DAC8FB9A2BAB49D500398503 /* ProjectStatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB982BAB49D500398503 /* ProjectStatCard.swift */; };
-		DAC8FB9B2BAB49D500398503 /* ProjectStatCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB982BAB49D500398503 /* ProjectStatCard.swift */; };
+		DAC8FB992BAB49D500398503 /* ProjectStatTimerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB982BAB49D500398503 /* ProjectStatTimerCard.swift */; };
+		DAC8FB9A2BAB49D500398503 /* ProjectStatTimerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB982BAB49D500398503 /* ProjectStatTimerCard.swift */; };
+		DAC8FB9B2BAB49D500398503 /* ProjectStatTimerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB982BAB49D500398503 /* ProjectStatTimerCard.swift */; };
 		DAC8FB9D2BAB4A1100398503 /* ProjectStatClickableTimeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB9C2BAB4A1100398503 /* ProjectStatClickableTimeCard.swift */; };
 		DAC8FB9E2BAB4A1100398503 /* ProjectStatClickableTimeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB9C2BAB4A1100398503 /* ProjectStatClickableTimeCard.swift */; };
 		DAC8FB9F2BAB4A1100398503 /* ProjectStatClickableTimeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB9C2BAB4A1100398503 /* ProjectStatClickableTimeCard.swift */; };
@@ -99,6 +99,9 @@
 		DAC8FBAD2BB5860900398503 /* IntPickerField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FBAC2BB5860900398503 /* IntPickerField.swift */; };
 		DAC8FBAE2BB5860900398503 /* IntPickerField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FBAC2BB5860900398503 /* IntPickerField.swift */; };
 		DAC8FBAF2BB5860900398503 /* IntPickerField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FBAC2BB5860900398503 /* IntPickerField.swift */; };
+		DAC8FBB52BB71D9A00398503 /* ProjectStatIntCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FBB42BB71D9A00398503 /* ProjectStatIntCard.swift */; };
+		DAC8FBB62BB71D9A00398503 /* ProjectStatIntCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FBB42BB71D9A00398503 /* ProjectStatIntCard.swift */; };
+		DAC8FBB72BB71D9A00398503 /* ProjectStatIntCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FBB42BB71D9A00398503 /* ProjectStatIntCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,12 +157,13 @@
 		DAC8FB8B2BAB232800398503 /* TagsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsCollectionView.swift; sourceTree = "<group>"; };
 		DAC8FB8F2BAB40CB00398503 /* NewTaskInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskInput.swift; sourceTree = "<group>"; };
 		DAC8FB932BAB474B00398503 /* ProjectStatsBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStatsBoard.swift; sourceTree = "<group>"; };
-		DAC8FB982BAB49D500398503 /* ProjectStatCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStatCard.swift; sourceTree = "<group>"; };
+		DAC8FB982BAB49D500398503 /* ProjectStatTimerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStatTimerCard.swift; sourceTree = "<group>"; };
 		DAC8FB9C2BAB4A1100398503 /* ProjectStatClickableTimeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStatClickableTimeCard.swift; sourceTree = "<group>"; };
 		DAC8FBA02BAB4B1100398503 /* Manrope-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Manrope-Light.ttf"; sourceTree = "<group>"; };
 		DAC8FBA42BB4577100398503 /* CustomTimePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTimePicker.swift; sourceTree = "<group>"; };
 		DAC8FBA82BB4634600398503 /* CustomTimePickerField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTimePickerField.swift; sourceTree = "<group>"; };
 		DAC8FBAC2BB5860900398503 /* IntPickerField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntPickerField.swift; sourceTree = "<group>"; };
+		DAC8FBB42BB71D9A00398503 /* ProjectStatIntCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectStatIntCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,7 +344,8 @@
 			isa = PBXGroup;
 			children = (
 				DAC8FB932BAB474B00398503 /* ProjectStatsBoard.swift */,
-				DAC8FB982BAB49D500398503 /* ProjectStatCard.swift */,
+				DAC8FB982BAB49D500398503 /* ProjectStatTimerCard.swift */,
+				DAC8FBB42BB71D9A00398503 /* ProjectStatIntCard.swift */,
 				DAC8FB9C2BAB4A1100398503 /* ProjectStatClickableTimeCard.swift */,
 			);
 			path = ProjectStatsBoard;
@@ -502,7 +507,7 @@
 				DA1676CB2B98BDDB003DC9CD /* BlurScroll.swift in Sources */,
 				DA1676B72B95E4D7003DC9CD /* Colors.swift in Sources */,
 				DA11ED022B91D7DD0044CD17 /* ContentView.swift in Sources */,
-				DAC8FB992BAB49D500398503 /* ProjectStatCard.swift in Sources */,
+				DAC8FB992BAB49D500398503 /* ProjectStatTimerCard.swift in Sources */,
 				DA1676BA2B95FFB9003DC9CD /* Homepage.swift in Sources */,
 				DAC8FBA52BB4577100398503 /* CustomTimePicker.swift in Sources */,
 				DA5888B42B9A020C007BA4B0 /* CornerRadius.swift in Sources */,
@@ -510,6 +515,7 @@
 				DA1676C62B98B859003DC9CD /* AddProjectButton.swift in Sources */,
 				DAC8FBA92BB4634700398503 /* CustomTimePickerField.swift in Sources */,
 				DA1676BE2B9601F3003DC9CD /* Text.swift in Sources */,
+				DAC8FBB52BB71D9A00398503 /* ProjectStatIntCard.swift in Sources */,
 				DAC8FB942BAB474B00398503 /* ProjectStatsBoard.swift in Sources */,
 				DAA2BDB92BA9E76F00017EC3 /* TaskModel.swift in Sources */,
 				DAA2BD9F2BA304B300017EC3 /* ProjectStorage.swift in Sources */,
@@ -536,7 +542,7 @@
 				DAA2BD972BA061CE00017EC3 /* Sheet.swift in Sources */,
 				DA1676C32B961291003DC9CD /* ProjectCard.swift in Sources */,
 				DAA2BDB62BA9E21F00017EC3 /* TaskCard.swift in Sources */,
-				DAC8FB9A2BAB49D500398503 /* ProjectStatCard.swift in Sources */,
+				DAC8FB9A2BAB49D500398503 /* ProjectStatTimerCard.swift in Sources */,
 				DA1676C72B98B859003DC9CD /* AddProjectButton.swift in Sources */,
 				DAC8FB8D2BAB232900398503 /* TagsCollectionView.swift in Sources */,
 				DAC8FB912BAB40CB00398503 /* NewTaskInput.swift in Sources */,
@@ -544,6 +550,7 @@
 				DA1676BB2B95FFB9003DC9CD /* Homepage.swift in Sources */,
 				DAC8FBAE2BB5860900398503 /* IntPickerField.swift in Sources */,
 				DAA2BDBE2BA9E81500017EC3 /* LabelModel.swift in Sources */,
+				DAC8FBB62BB71D9A00398503 /* ProjectStatIntCard.swift in Sources */,
 				DAA2BDBA2BA9E77000017EC3 /* TaskModel.swift in Sources */,
 				DAA2BDA02BA304B300017EC3 /* ProjectStorage.swift in Sources */,
 				DAA2BDB22BA4A56E00017EC3 /* ProjectView.swift in Sources */,
@@ -562,7 +569,7 @@
 				DAC8FB8A2BAAE10700398503 /* Colors.swift in Sources */,
 				DAA2BDB32BA4A56E00017EC3 /* ProjectView.swift in Sources */,
 				DA1676CD2B98BDDB003DC9CD /* BlurScroll.swift in Sources */,
-				DAC8FB9B2BAB49D500398503 /* ProjectStatCard.swift in Sources */,
+				DAC8FB9B2BAB49D500398503 /* ProjectStatTimerCard.swift in Sources */,
 				DAA2BDA12BA304B300017EC3 /* ProjectStorage.swift in Sources */,
 				DAC8FB962BAB474B00398503 /* ProjectStatsBoard.swift in Sources */,
 				DA1676C82B98B859003DC9CD /* AddProjectButton.swift in Sources */,
@@ -572,6 +579,7 @@
 				DAA2BDBF2BA9E81500017EC3 /* LabelModel.swift in Sources */,
 				DA1676BC2B95FFB9003DC9CD /* Homepage.swift in Sources */,
 				DAC8FB9F2BAB4A1100398503 /* ProjectStatClickableTimeCard.swift in Sources */,
+				DAC8FBB72BB71D9A00398503 /* ProjectStatIntCard.swift in Sources */,
 				DAA2BD9D2BA3039400017EC3 /* ProjectModel.swift in Sources */,
 				DAC8FBAB2BB4634700398503 /* CustomTimePickerField.swift in Sources */,
 				DA1676C42B961291003DC9CD /* ProjectCard.swift in Sources */,

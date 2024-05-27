@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TaskModel: Identifiable, Codable, Equatable {
+struct TaskModel: Identifiable, Codable, Equatable, Hashable {
     var id: UUID
     var name: String
     var length: Int // number of pomodoros
