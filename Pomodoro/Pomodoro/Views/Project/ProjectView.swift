@@ -15,14 +15,6 @@ struct ProjectView: View {
     init(project: Binding<ProjectModel>) {
         self._project = project
     }
-    
-    init(project: Binding<ProjectModel>?) {
-        guard let project = project else {
-            self._project = Binding.constant(ProjectModel(name: ""))
-            return
-        }
-        self._project = project
-    }
 
     var body: some View {
         return VStack(spacing: 5) {
@@ -68,6 +60,16 @@ struct ProjectView: View {
         }
         .toolbarBackground(.visible, for: .navigationBar)
         .toolbarBackground(Color.cardBackground, for: .navigationBar)
+    }
+}
+
+extension ProjectView {
+    init(project: Binding<ProjectModel>?) {
+        guard let project = project else {
+            self._project = Binding.constant(ProjectModel(name: ""))
+            return
+        }
+        self._project = project
     }
 }
 
