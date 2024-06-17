@@ -10,10 +10,11 @@ import SwiftUI
 @main
 struct PomodoroApp: App {
     @StateObject private var store = ProjectStorage()
+    @State private var path = NavigationPath()
 
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
+            NavigationStack(path: $path) {
                 Homepage()
                     .task {
                         do {
@@ -21,6 +22,9 @@ struct PomodoroApp: App {
                         } catch {
                             fatalError(error.localizedDescription)
                         }
+                    }
+                    .onAppear {
+                        UIApplication.shared.addTapGestureRecognizer()
                     }
             }
             .environmentObject(store)

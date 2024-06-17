@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Time: Codable, Equatable {
+struct Time: Codable, Equatable, Hashable {
     static func == (lhs: Time, rhs: Time) -> Bool {
         lhs.hours == rhs.hours && lhs.minutes == rhs.minutes
     }
@@ -25,7 +25,7 @@ struct Time: Codable, Equatable {
     }
 }
 
-struct ProjectModel: Identifiable, Codable, Equatable {
+struct ProjectModel: Identifiable, Codable, Equatable, Hashable {
     
     static func == (lhs: ProjectModel, rhs: ProjectModel) -> Bool {
         return lhs.id == rhs.id &&
@@ -77,42 +77,45 @@ extension ProjectModel {
         ProjectModel(name: "project 10")
     ]
     
+    static let debugProjectId = UUID()
     static let debugProject = ProjectModel(name: "project 1", tasks: [
-        TaskModel(name: "task 1", length: 1, isComplete: true),
-        TaskModel(name: "task 2", length: 2, isComplete: true),
+        TaskModel(name: "task 1", length: 1, isComplete: true, projectId: debugProjectId),
+        TaskModel(name: "task 2", length: 2, isComplete: true, projectId: debugProjectId),
         TaskModel(name: "task 3", length: 1, labels: [
             LabelModel(name: "prio 1", color: .red),
             LabelModel(name: "testLongLabel", color: .green),
-        ], isComplete: false),
+        ], isComplete: false, projectId: debugProjectId),
         TaskModel(name: "task 4", length: 3, labels: [
             LabelModel(name: "prio 1", color: .red),
             LabelModel(name: "testLongLabel", color: .green),
             LabelModel(name: "testLongLabel", color: .blue),
             LabelModel(name: "testLongLabel", color: .blue),
             LabelModel(name: "testLongLabel", color: .blue),
-        ], isComplete: false)
+        ], isComplete: false, projectId: debugProjectId)
     ])
-    
+
+    static let fullDebugProjectId = UUID()
     static let fullDebugProject = ProjectModel(
+        id: fullDebugProjectId,
         name: "project 1",
         pomodoroLength: Time(hours: 0, minutes: 20),
         pomodorosBeforeBreak: 6,
         smallBreakLength: Time(hours: 0, minutes: 7),
         longBreakLength: Time(hours: 0, minutes: 35),
         tasks: [
-            TaskModel(name: "task 1", length: 1, isComplete: true),
-            TaskModel(name: "task 2", length: 2, isComplete: true),
+            TaskModel(name: "task 1", length: 1, isComplete: true, projectId: fullDebugProjectId),
+            TaskModel(name: "task 2", length: 2, isComplete: true, projectId: fullDebugProjectId),
             TaskModel(name: "task 3", length: 1, labels: [
                 LabelModel(name: "prio 1", color: .red),
                 LabelModel(name: "testLongLabel", color: .green),
-            ], isComplete: false),
+            ], isComplete: false, projectId: fullDebugProjectId),
             TaskModel(name: "task 4", length: 3, labels: [
                 LabelModel(name: "prio 1", color: .red),
                 LabelModel(name: "testLongLabel", color: .green),
                 LabelModel(name: "testLongLabel", color: .blue),
                 LabelModel(name: "testLongLabel", color: .blue),
                 LabelModel(name: "testLongLabel", color: .blue),
-            ], isComplete: false)
+            ], isComplete: false, projectId: fullDebugProjectId)
         ]
     )
 }

@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct LabelModel: Identifiable, Codable, Equatable {
+struct LabelModel: Identifiable, Codable, Equatable, Hashable {
     static func == (lhs: LabelModel, rhs: LabelModel) -> Bool {
         lhs.id == rhs.id &&
         lhs.name == rhs.name &&

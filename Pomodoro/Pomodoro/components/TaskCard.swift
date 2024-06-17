@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct TaskCard: View {
-    var task: TaskModel
+    @Binding var task: TaskModel
+//    var projectId: UUID
     private var isLargeCard: Bool {
         return task.length > 1 || !task.labels.isEmpty
     }
@@ -17,7 +18,7 @@ struct TaskCard: View {
     private let playImage = Image("play")
     
     var body: some View {
-        NavigationLink(destination: {}) {
+        NavigationLink(destination: TaskView(task: $task)) {
             HStack(spacing: 0) {
                 VStack(alignment: .leading, spacing: 0) {
                     Text(task.name)
@@ -68,27 +69,28 @@ struct TaskCard: View {
 }
 
 struct TaskCard_Previews: PreviewProvider {
-    static let task = TaskModel(name: "task 1")
-    static let taskWithLabels = TaskModel(name: "task 2", labels: [
+    static let fakeProjectId = UUID()
+    @State static var task = TaskModel(name: "task 1", projectId: fakeProjectId)
+    @State static var taskWithLabels = TaskModel(name: "task 2", labels: [
         LabelModel(name: "prio 1", color: .red),
         LabelModel(name: "testLongLabel", color: .green)
-    ], isComplete: true)
-    static let longTask = TaskModel(name: "task 3", length: 2)
-    static let taskFull = TaskModel(name: "task 4", length: 3, labels: [
+    ], isComplete: true, projectId: fakeProjectId)
+    @State static var longTask = TaskModel(name: "task 3", length: 2, projectId: fakeProjectId)
+    @State static var taskFull = TaskModel(name: "task 4", length: 3, labels: [
         LabelModel(name: "prio 1", color: .red),
         LabelModel(name: "testLongLabel", color: .green),
         LabelModel(name: "testLongLabel", color: .blue),
         LabelModel(name: "testLongLabel", color: .blue),
         LabelModel(name: "testLongLabel", color: .blue),
-    ], isComplete: true)
+    ], isComplete: true, projectId: fakeProjectId)
     
     static var previews: some View {
         NavigationStack {
             VStack {
-                TaskCard(task: task)
-                TaskCard(task: taskWithLabels)
-                TaskCard(task: longTask)
-                TaskCard(task: taskFull)
+                TaskCard(task: $task)
+                TaskCard(task: $taskWithLabels)
+                TaskCard(task: $longTask)
+                TaskCard(task: $taskFull)
             }
             .ignoresSafeArea()
             .frame(maxWidth: .infinity, maxHeight: .infinity)

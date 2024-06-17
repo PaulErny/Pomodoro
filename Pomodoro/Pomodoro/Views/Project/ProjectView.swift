@@ -18,20 +18,19 @@ struct ProjectView: View {
 
     var body: some View {
         return VStack(spacing: 5) {
-            //  stats
             ProjectStatsBoard(project: $project)
                 .padding(.top, 10)
                 .padding(.bottom, 5)
 
             NewTaskInput(onComplete: { taskName in
                 withAnimation {
-                    project.tasks.append(TaskModel(name: taskName))
+                    project.tasks.append(TaskModel(name: taskName, projectId: project.id))
                 }
             })
             .padding(.bottom, 5)
             ScrollView {
                 LazyVStack {
-                    ForEach(project.tasks, id: \.id) { task in
+                    ForEach($project.tasks, id: \.id) { task in
                         TaskCard(task: task)
                     }
                 }

@@ -44,6 +44,7 @@ struct NewTaskInput: View {
             .onSubmit {
                 if checkIsContentValid() {
                     onComplete?(taskName)
+                    taskName = ""
                 }
             }
     }

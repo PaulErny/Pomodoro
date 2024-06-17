@@ -37,6 +37,7 @@
 		DA1676CD2B98BDDB003DC9CD /* BlurScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1676CA2B98BDDB003DC9CD /* BlurScroll.swift */; };
 		DA5888B22B99FE82007BA4B0 /* CustomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5888B12B99FE82007BA4B0 /* CustomSheet.swift */; };
 		DA5888B42B9A020C007BA4B0 /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5888B32B9A020C007BA4B0 /* CornerRadius.swift */; };
+		DA69431B2C2077AE00936CAE /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA69431A2C2077AE00936CAE /* Keyboard.swift */; };
 		DAA2BD8B2B9F478000017EC3 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16769B2B95D8B5003DC9CD /* Fonts.swift */; };
 		DAA2BD8C2B9F478000017EC3 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA16769B2B95D8B5003DC9CD /* Fonts.swift */; };
 		DAA2BD8F2B9F47B700017EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA11ED032B91D7DF0044CD17 /* Assets.xcassets */; };
@@ -94,6 +95,11 @@
 		DAE04D292C04D2E600E7FB52 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE04D282C04D2E600E7FB52 /* Tag.swift */; };
 		DAE04D2B2C04D44A00E7FB52 /* NewTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE04D2A2C04D44A00E7FB52 /* NewTag.swift */; };
 		DAE04D2E2C04D7B900E7FB52 /* TagAncestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE04D2D2C04D7B900E7FB52 /* TagAncestor.swift */; };
+		DAE04D302C04DE5700E7FB52 /* TaskMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE04D2F2C04DE5700E7FB52 /* TaskMain.swift */; };
+		DAE04D322C04E0AB00E7FB52 /* PomodorosCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE04D312C04E0AB00E7FB52 /* PomodorosCard.swift */; };
+		DAE04D362C060DA000E7FB52 /* MultiLineTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE04D352C060DA000E7FB52 /* MultiLineTextfield.swift */; };
+		DAE04D382C0611A100E7FB52 /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE04D372C0611A100E7FB52 /* DeleteButton.swift */; };
+		DAE04D3B2C0A0BD200E7FB52 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE04D3A2C0A0BD200E7FB52 /* Binding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,6 +144,7 @@
 		DA1676CA2B98BDDB003DC9CD /* BlurScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurScroll.swift; sourceTree = "<group>"; };
 		DA5888B12B99FE82007BA4B0 /* CustomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSheet.swift; sourceTree = "<group>"; };
 		DA5888B32B9A020C007BA4B0 /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
+		DA69431A2C2077AE00936CAE /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		DAA2BD912B9F4B6F00017EC3 /* ProjectCreationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCreationSheet.swift; sourceTree = "<group>"; };
 		DAA2BD952BA061CE00017EC3 /* Sheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sheet.swift; sourceTree = "<group>"; };
 		DAA2BD9A2BA3039400017EC3 /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
@@ -160,6 +167,11 @@
 		DAE04D282C04D2E600E7FB52 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		DAE04D2A2C04D44A00E7FB52 /* NewTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTag.swift; sourceTree = "<group>"; };
 		DAE04D2D2C04D7B900E7FB52 /* TagAncestor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagAncestor.swift; sourceTree = "<group>"; };
+		DAE04D2F2C04DE5700E7FB52 /* TaskMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskMain.swift; sourceTree = "<group>"; };
+		DAE04D312C04E0AB00E7FB52 /* PomodorosCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodorosCard.swift; sourceTree = "<group>"; };
+		DAE04D352C060DA000E7FB52 /* MultiLineTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLineTextfield.swift; sourceTree = "<group>"; };
+		DAE04D372C0611A100E7FB52 /* DeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
+		DAE04D3A2C0A0BD200E7FB52 /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +229,7 @@
 				DA1676B52B95E49F003DC9CD /* Style */,
 				DA11ED032B91D7DF0044CD17 /* Assets.xcassets */,
 				DAA2BDAF2BA4A51E00017EC3 /* Views */,
+				DAE04D392C0A0BAE00E7FB52 /* Extentions */,
 				DA1676C92B98BCDD003DC9CD /* ViewModifiers */,
 				DA16769A2B95D877003DC9CD /* components */,
 				DA11ED052B91D7DF0044CD17 /* Preview Content */,
@@ -254,7 +267,11 @@
 			children = (
 				DA1676C52B98B858003DC9CD /* AddProjectButton.swift */,
 				DAA2BD912B9F4B6F00017EC3 /* ProjectCreationSheet.swift */,
+				DAE04D352C060DA000E7FB52 /* MultiLineTextfield.swift */,
+				DAE04D2F2C04DE5700E7FB52 /* TaskMain.swift */,
 				DAA2BD952BA061CE00017EC3 /* Sheet.swift */,
+				DAE04D372C0611A100E7FB52 /* DeleteButton.swift */,
+				DAE04D312C04E0AB00E7FB52 /* PomodorosCard.swift */,
 				DAC8FB8B2BAB232800398503 /* TagsCollectionView.swift */,
 				DAE04D2C2C04D6FD00E7FB52 /* Tags */,
 				DAC8FB972BAB49B800398503 /* ProjectStatsBoard */,
@@ -365,6 +382,15 @@
 				DAE04D2D2C04D7B900E7FB52 /* TagAncestor.swift */,
 			);
 			path = Tags;
+			sourceTree = "<group>";
+		};
+		DAE04D392C0A0BAE00E7FB52 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				DAE04D3A2C0A0BD200E7FB52 /* Binding.swift */,
+				DA69431A2C2077AE00936CAE /* Keyboard.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -513,6 +539,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAC8FB9D2BAB4A1100398503 /* ProjectStatClickableTimeCard.swift in Sources */,
+				DAE04D302C04DE5700E7FB52 /* TaskMain.swift in Sources */,
+				DAE04D322C04E0AB00E7FB52 /* PomodorosCard.swift in Sources */,
 				DAA2BD9B2BA3039400017EC3 /* ProjectModel.swift in Sources */,
 				DAC8FB8C2BAB232800398503 /* TagsCollectionView.swift in Sources */,
 				DA5888B22B99FE82007BA4B0 /* CustomSheet.swift in Sources */,
@@ -521,6 +549,8 @@
 				DAA2BDB52BA9E21F00017EC3 /* TaskCard.swift in Sources */,
 				DAE04D2E2C04D7B900E7FB52 /* TagAncestor.swift in Sources */,
 				DAC8FB902BAB40CB00398503 /* NewTaskInput.swift in Sources */,
+				DAE04D362C060DA000E7FB52 /* MultiLineTextfield.swift in Sources */,
+				DAE04D3B2C0A0BD200E7FB52 /* Binding.swift in Sources */,
 				DA16769C2B95D8B5003DC9CD /* Fonts.swift in Sources */,
 				DA1676CB2B98BDDB003DC9CD /* BlurScroll.swift in Sources */,
 				DA1676B72B95E4D7003DC9CD /* Colors.swift in Sources */,
@@ -536,11 +566,13 @@
 				DA1676BE2B9601F3003DC9CD /* Text.swift in Sources */,
 				DAC8FBB52BB71D9A00398503 /* ProjectStatIntCard.swift in Sources */,
 				DAC8FB942BAB474B00398503 /* ProjectStatsBoard.swift in Sources */,
+				DA69431B2C2077AE00936CAE /* Keyboard.swift in Sources */,
 				DAE04D272C04D05700E7FB52 /* TaskView.swift in Sources */,
 				DAA2BDB92BA9E76F00017EC3 /* TaskModel.swift in Sources */,
 				DAA2BD9F2BA304B300017EC3 /* ProjectStorage.swift in Sources */,
 				DAA2BD962BA061CE00017EC3 /* Sheet.swift in Sources */,
 				DAA2BD922B9F4B6F00017EC3 /* ProjectCreationSheet.swift in Sources */,
+				DAE04D382C0611A100E7FB52 /* DeleteButton.swift in Sources */,
 				DAA2BDB12BA4A56E00017EC3 /* ProjectView.swift in Sources */,
 				DA11ED002B91D7DD0044CD17 /* PomodoroApp.swift in Sources */,
 				DAA2BDBD2BA9E81500017EC3 /* LabelModel.swift in Sources */,
